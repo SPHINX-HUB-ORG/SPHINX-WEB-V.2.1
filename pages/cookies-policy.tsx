@@ -8,106 +8,58 @@ export default function ContactPage() {
       <CookiesPolicyContainer>
         <RichText>
           <p>
-            Deserunt culpa consequat non nostrud esse cillum pariatur velit consequat. Est fugiat voluptate deserunt sint culpa sint.
-            Laboris irure veniam quis ea voluptate. Nulla ad proident ex excepteur. Sunt sint ex laborum dolor quis magna aliquip qui amet
-            nulla. Laboris proident aute exercitation irure esse id eu occaecat ad ipsum est. Dolor cillum Lorem occaecat enim veniam
-            ullamco cupidatat qui dolore exercitation Lorem eu quis magna. Esse cillum aliqua et laborum eu dolore consectetur. Exercitation
-            id non quis ex qui in dolore est est proident. Laborum nisi commodo fugiat nulla et magna veniam aliquip. Aliqua duis non
-            nostrud ea velit incididunt. Laboris nostrud incididunt laborum enim eu dolor. Culpa anim sit sit ea. Labore laborum et aute ex
-            est est excepteur labore voluptate deserunt. Amet ea laboris ea culpa dolor laborum consequat aliquip reprehenderit voluptate
-            non laboris ipsum. Quis excepteur pariatur est enim duis consectetur nulla cupidatat ipsum dolor nisi ipsum. Dolore dolor
-            nostrud aute dolore. Excepteur reprehenderit aliquip amet pariatur excepteur. Aliqua commodo nulla dolor ex nisi duis
-            reprehenderit sint aliqua in minim. Lorem amet quis non veniam ut reprehenderit aliquip mollit do ullamco pariatur.
+            This is the Cookies Policy of SPHINX, an open-source post-quantum blockchain layer 1. In this policy, "we," "our," and "us" refer to
+            SPHINX. This policy outlines how we use cookies on our website and your options regarding their use. By using our website, you
+            consent to the use of cookies as described in this policy.
           </p>
-          <br />
           <strong>
-            Reprehenderit aliquip minim commodo magna occaecat dolore labore mollit mollit do esse deserunt. Aliquip eu reprehenderit aute{' '}
+            What Are Cookies?
           </strong>
+          <p>
+            Cookies are small text files that are stored on your device when you visit a website. They are widely used to make websites work
+            or work more efficiently, as well as to provide reporting information and personalized content. Cookies do not damage your device
+            and are not harmful to your files.
+          </p>
           <ul>
             <li>
-              Ipsum cillum amet aliqua laboris ut excepteur enim laborum veniam officia officia esse. Anim et voluptate qui quis cillum
-              labore ipsum incididunt consequat est ea exercitation et commodo. Consequat consequat amet officia sit non id occaecat
-              occaecat duis irure.
+              <strong>Session Cookies:</strong> These cookies are temporary and are deleted from your device once you close your browser. They
+              help us remember your actions during a single browsing session.
             </li>
-            <li>Nostrud dolor pariatur dolore Lorem in aliqua sunt aliqua excepteur laboris exercitation proident officia.</li>
-            <li>Ut et voluptate consequat elit amet minim.</li>
-            <li>Reprehenderit et consequat ea minim est proident eu incididunt non laboris proident culpa consequat sint.</li>
+            <li>
+              <strong>Persistent Cookies:</strong> These cookies remain on your device even after you close your browser or complete your
+              browsing session. They are used to remember your preferences and actions across multiple sessions.
+            </li>
+            <li>
+              <strong>Third-Party Cookies:</strong> These cookies are placed by third-party services that we use, such as analytics or
+              advertising services. We have no control over these cookies and their use is governed by the third party's own privacy policy.
+            </li>
           </ul>
 
           <table>
             <tr>
-              <th>Column 1</th>
-              <th>Column 2</th>
-              <th>Column 3</th>
-              <th>Column 4</th>
+              <th>Cookie Name</th>
+              <th>Purpose</th>
+              <th>Expiration</th>
             </tr>
             <tr>
-              <td>Dolor do culpa excepteur proident anim duis deserunt nulla dolor et tempor.</td>
-              <td>Eu enim qui ea nostrud minim.</td>
-              <td>Proident officia velit ut in est culpa non adipisicing excepteur exercitation aliqua.</td>
-              <td>Duis proident adipisicing magna aute sint adipisicing sit deserunt minim eu.</td>
+              <td>cookie_name_1</td>
+              <td>Description of how this cookie is used.</td>
+              <td>Expiry date of the cookie.</td>
             </tr>
             <tr>
-              <td>Nisi cillum culpa adipisicing cillum.</td>
-              <td>Proident nulla cillum aute occaecat mollit labore.</td>
-              <td>Non ex eiusmod tempor cupidatat consequat anim et veniam nisi sint fugiat pariatur irure.</td>
-              <td>Consectetur nisi culpa non ex ipsum deserunt magna est est magna.</td>
+              <td>cookie_name_2</td>
+              <td>Explanation of the purpose of this cookie.</td>
+              <td>Expiration date for this cookie.</td>
             </tr>
             <tr>
-              <td>Officia laboris anim voluptate incididunt mollit mollit.</td>
-              <td>Adipisicing est consectetur id esse nostrud culpa non exercitation cupidatat pariatur dolore amet.</td>
-              <td>Dolor ex est ad ut adipisicing irure nulla esse aliqua nisi ipsum id aliqua.</td>
-              <td>Proident anim consequat enim sit sint pariatur.</td>
+              <td>cookie_name_3</td>
+              <td>Detail the use of this cookie.</td>
+              <td>Expiry information for this cookie.</td>
             </tr>
             <tr>
-              <td>Sint anim sint deserunt in elit ad Lorem dolore tempor.</td>
-              <td>Consequat nostrud irure anim do ex dolor amet ea dolore incididunt esse et cupidatat.</td>
-              <td>Eu nostrud occaecat incididunt deserunt Lorem ad Lorem elit.</td>
-              <td>Id ullamco in ad adipisicing magna elit ea minim sunt esse adipisicing.</td>
-            </tr>
-            <tr>
-              <td>Ea adipisicing ut nulla aute dolore quis in reprehenderit qui ipsum Lorem magna.</td>
-              <td>Irure ex dolore consequat mollit Lorem nostrud velit irure.</td>
-              <td>Dolore minim ad esse occaecat.</td>
-              <td>Qui id tempor ut culpa.</td>
-            </tr>
-            <tr>
-              <td>Ea ut esse non dolor do cupidatat.</td>
-              <td>Deserunt pariatur minim nisi elit ipsum officia irure id culpa ipsum.</td>
-              <td>Ea cillum voluptate consectetur et reprehenderit mollit ut excepteur exercitation do fugiat duis qui.</td>
-              <td>Id laborum officia aliqua ut nulla mollit.</td>
-            </tr>
-            <tr>
-              <td>Laborum et et sint ad incididunt amet aliqua commodo esse proident.</td>
-              <td>Velit aute proident aliqua consequat minim laborum reprehenderit reprehenderit eiusmod amet in aute.</td>
-              <td>Adipisicing adipisicing consequat incididunt officia in eu minim non cupidatat nulla nostrud sint.</td>
-              <td>Excepteur minim ea ex commodo nisi aute nostrud cupidatat consectetur.</td>
-            </tr>
-            <tr>
-              <td>Anim elit aliquip elit mollit pariatur consectetur commodo.</td>
-              <td>Consequat cupidatat sit sit quis labore culpa in duis duis amet elit.</td>
-              <td>Laborum Lorem pariatur id adipisicing minim.</td>
-              <td>Deserunt Lorem do id ea aliquip sunt.</td>
-            </tr>
-            <tr>
-              <td>Laborum aute laborum elit adipisicing velit commodo occaecat amet laborum.</td>
-              <td>Dolor voluptate duis elit id.</td>
-              <td>Excepteur sunt duis id officia id reprehenderit enim exercitation dolor.</td>
-              <td>Et excepteur duis adipisicing laboris labore adipisicing id dolor adipisicing exercitation eu nisi.</td>
-            </tr>
-            <tr>
-              <td>Esse consequat commodo irure elit nostrud esse ut magna commodo ipsum.</td>
-              <td>Exercitation exercitation ipsum qui aute ad commodo exercitation aliquip nisi aute Lorem in nulla.</td>
-              <td>Sint cillum esse quis mollit fugiat incididunt officia adipisicing do sint eu.</td>
-              <td>Consectetur aute ad aliquip eu Lorem proident irure aliqua aliqua officia reprehenderit reprehenderit amet.</td>
-            </tr>
-            <tr>
-              <td>Est Lorem exercitation eiusmod sit et.</td>
-              <td>Quis aliqua irure dolor do reprehenderit non id excepteur voluptate eiusmod veniam nostrud et elit.</td>
-              <td>Minim id sit officia consectetur irure id deserunt excepteur eu.</td>
-              <td>
-                Reprehenderit pariatur reprehenderit voluptate cillum minim tempor elit sint eiusmod ullamco id incididunt officia dolore.
-              </td>
+              <td>cookie_name_4</td>
+              <td>How this cookie contributes to user experience.</td>
+              <td>When this cookie will expire.</td>
             </tr>
           </table>
         </RichText>
