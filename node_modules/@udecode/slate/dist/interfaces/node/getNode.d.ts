@@ -1,0 +1,11 @@
+import { Path } from 'slate';
+import { NodeOf, TNode } from './TNode';
+/**
+ * Get the descendant node referred to by a specific path.
+ * If the path is an empty array, it refers to the root node itself.
+ * If the node is not found, return null.
+ * Based on Slate get and has, performance optimization without overhead of
+ * stringify on throwing
+ */
+export declare const getNode: <N extends NodeOf<R>, R extends TNode = TNode>(root: R, path: Path) => N | null;
+//# sourceMappingURL=getNode.d.ts.map

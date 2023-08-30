@@ -1,0 +1,1 @@
+{"version":3,"file":"createInlineVoidPlugin.d.ts","sourceRoot":"","sources":["../../src/plugins/createInlineVoidPlugin.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,gBAAgB,CAAC;AACvC,OAAO,EAAE,WAAW,EAAE,MAAM,sBAAsB,CAAC;AAGnD,eAAO,MAAM,eAAe,gBAAgB,CAAC;AAE7C;;;GAGG;AACH,eAAO,MAAM,cAAc,sFA8B1B,CAAC;AAEF;;GAEG;AACH,eAAO,MAAM,sBAAsB,iUAGjC,CAAC"}

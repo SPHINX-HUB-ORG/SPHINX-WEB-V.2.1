@@ -1,0 +1,1 @@
+{"version":3,"file":"getRangeBoundingClientRect.d.ts","sourceRoot":"","sources":["../../src/utils/getRangeBoundingClientRect.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,gBAAgB,EAAE,MAAM,mBAAmB,CAAC;AACrD,OAAO,EAAc,YAAY,EAAE,KAAK,EAAE,MAAM,uBAAuB,CAAC;AACxE,OAAO,EAAE,KAAK,EAAE,MAAM,OAAO,CAAC;AAG9B;;GAEG;AACH,eAAO,MAAM,0BAA0B,iDAEjC,KAAK,GAAG,IAAI,KACf,gBAOF,CAAC"}

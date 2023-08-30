@@ -1,0 +1,2282 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>SPHINX | Learning center</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="open-source post-quantum blockchain layer 1">
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Hihglitght JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+	<link id="theme-style" rel="stylesheet" href="assets/css/gists.css">
+</head> 
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+					<div class="site-logo">
+						<a class="navbar-brand" href="javascript:void(0);" id="logo-link">
+						  <img class="logo-icon me-2" src="assets/images/Logo.svg" alt="Logo">
+						</a>
+					  </div>								  
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <div class="top-search-box d-none d-lg-flex">
+		                <form class="search-form">
+				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				        </form>
+	                </div>
+	
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a href="https://github.com/SPHINX-HUB-ORG" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="https://twitter.com/sphinx_org" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="https://discord.gg/xBuu8wbu" target="_blank"><i class="fab fa-discord fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="https://t.me/SPHINX_Network" target="_blank"><i class="fab fa-telegram fa-fw"></i></a></li>
+					</ul><!--//social-list-->
+		            <a href="https://forms.gle/YhuVTSjUkY6AT8HM6" class="btn btn-primary d-none d-lg-flex" target="_blank">Contribute</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1">Introduction</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Background</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Brand</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Vision</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Key objective</a></li>
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3">PQC Blockchain</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Post-quantum overview</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Crystals-kyber overview</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Sphincs+ (DSA) overview</a></li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">SWIFFTX hash function overview</a></li>
+
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4">Whitepaper</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Abstract</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Introduction</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">The problem</a></li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-4">Key objective</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-5">PQC architectures</a></li>
+					
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-6">Blockchain architectures</a></li>
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5">Roadmap</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">PQC urgency</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">PQC implementation</a></li>
+
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-4">MPC implementation</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-5">Cosschain implementation</a></li>
+					
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-6">Proof-of-Stake implementation</a></li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-7">Proof-of-Work implementation</a></li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-8">Smartcontract implementation</a></li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-9">Smartcontract interface implementation</a></li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-10">zkSTARK implementation</a></li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-11">Testnet</a></li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-12">Mainnet</a></li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-13">Layer 2 solution</a></li>
+
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7">Founders</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Founders and Inventors</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Inventors</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">Contributors</a></li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-7-4">Funding partners</a></li>
+
+
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9">FAQs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section 1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section 2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section 3</a></li>
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2023-06-03</span></h1>
+					    <section class="docs-intro">
+						    <p>
+								Welcome to our inclusive and dynamic decentralized world, where individuals and institutional from all walks of life are warmly invited to join and support the mission. Here, we believe that everyone has unique skills and passions to offer, and we encourage you to commit your talents towards making a lasting impact in the decentralized realm.
+							</p>
+							
+							<p>
+								Together, we form a united front dedicated to creating the most sustainable and robust blockchain ecosystem. Our goal is not only to strengthen the existing web3 ecosystem but also to anticipate and navigate the disruptive challenges posed by the imminent arrival of quantum computers.
+							</p>
+							
+							<p>
+								In this era of quantum-computers, we envision a future that is brighter and more promising for the global community. By synergizing our efforts, knowledge, and expertise, we strive to shape an innovative landscape that transcends boundaries and unlocks boundless possibilities.
+							</p>
+							
+							<p>
+								Join us as we embark on this transformative journey towards a decentralized future, where collaboration, innovation, and a shared vision empower us to build a resilient and thriving global community. Together, we have the power to redefine the way we interact, transact, and create value in a world that is rapidly evolving. Are you ready to be part of this groundbreaking revolution? lets continue to learn.
+							</p>
+						</section><!--//docs-introduction-->
+				    </header>
+				    <section class="docs-section" id="item-1-1"> 
+						<h2 class="section-heading">Background</h2>
+						<p>
+							In a world where technology is constantly advancing, it is crucial for us to recognize the pressing need to transition into the post-quantum era. The advent of quantum computers, with their unparalleled computational power and the ability to solve complex problems at an unprecedented scale, has the potential to revolutionize industries and disrupt existing cryptographic systems.
+						</p>
+						
+						<p>
+							Traditional cryptographic algorithms, which have served us well in securing sensitive information and facilitating secure transactions, face a formidable challenge in the face of quantum computers. These advanced machines possess the capability to break conventional cryptographic methods, rendering them vulnerable to attacks that were previously inconceivable. The very foundations upon which our digital infrastructure rests are at risk, necessitating a proactive and strategic shift towards post-quantum cryptography.
+
+						</p>
+						
+						<p>
+							By embracing the post-quantum era, we acknowledge the imperative to fortify our digital systems against the threats posed by quantum computing. It is a call to action, urging us to develop and implement quantum-resistant cryptographic algorithms that can withstand the computational might of these emerging technologies. Such algorithms, based on novel mathematical principles and cryptographic primitives, are designed to offer robust security even in the face of quantum adversaries.
+						</p>
+						
+						<p>
+							Entering the post-quantum era is not merely a matter of security; it is an opportunity to redefine the future landscape of technology and safeguard the integrity of our digital interactions. By proactively embracing this transition, we pave the way for a more resilient and trustworthy digital infrastructure. We empower individuals and organizations  to continue operating securely, protecting sensitive information, and ensuring the privacy of online communications.
+						</p>
+							
+						<p>
+							Furthermore, the post-quantum era presents us with the prospect of fostering innovation and pushing the boundaries of what is possible. It opens up avenues for groundbreaking research, collaboration, and the development of new cryptographic techniques that transcend the limitations of classical computing. By investing in this transformative shift, we position ourselves at the forefront of technological advancements, driving progress and staying ahead in an ever-evolving digital landscape.
+						</p>
+						
+						<p>
+							In conclusion, the urgency to enter the post-quantum era arises from the potential threats posed by quantum computers to our existing cryptographic systems. By embracing this transition, we fortify our digital infrastructure, protect sensitive information, and lay the foundation for a future where security, innovation, and progress coexist harmoniously. Together, let us seize this opportunity to shape a robust and secure post-quantum era, where technology empowers and safeguards us in equal measure.
+						</p>
+                        
+                       
+					</section><!--//section background-->
+					
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">SPHINX</h2>
+						<p>
+							In ancient times, the Sphinx was a mythical creature with the head of a human and the body of a lion. It was known for its enigmatic and mysterious nature, and for guarding the entrance to the city of Thebes. Legend has it that the Sphinx would pose a riddle to anyone who wanted to pass, and those who could not solve the riddle would be devoured. The most famous riddle of the Sphinx was: "What creature walks on four legs in the morning, two legs at noon, and three legs in the evening?"
+						</p>
+					
+						<p>
+							The answer, of course, is a human: we crawl on all fours as a baby, walk on two legs as an adult, and use a cane as an elderly person. It was only when the Greek hero Oedipus correctly answered the riddle that the Sphinx was vanquished, throwing itself off a cliff in despair.The story of the Sphinx has captivated the imagination of people for centuries, and its enigmatic and complex nature has made it a symbol of mystery, wisdom, and challenge. This is why the Sphinx has been a popular inspiration for artists, writers, and thinkers throughout history.
+						</p>
+					
+						<p>
+							But the Sphinx also has a connection to the world of cryptography, which makes it an appropriate symbol for your post-quantum blockchain project. In ancient Egypt, cryptography was used to encode messages and protect sensitive information, much like how modern cryptography is used to secure digital transactions and data. The pharaohs and their advisors used cryptography to communicate securely over long distances, without fear of interception or tampering. They relied on codes and ciphers to encode their messages, which could only be deciphered by those who possessed the key.
+						</p>
+
+						<p>
+							This ancient practice of cryptography highlights the enduring importance of securing information and protecting sensitive data. It also demonstrates the power of cryptography to transform the world, by enabling secure communication and enabling trust in digital transactions. This is why our post-quantum blockchain project is called the SPHINX, and it's also inspired by the <span><a class="docs-theme-link" href="https://sphincs.org/" target="_blank">SPHINCS+</a></span> post-quantum digital signature algorithm. Just like the Sphinx guarded the entrance to the city of Thebes, your blockchain project guards against the threat of quantum computing and provides a secure and decentralized platform for digital transaction
+						</p>
+					
+						<p>
+							The SPHINX blockchain represents the perfect marriage of ancient wisdom and modern technology. It combines the time-tested practice of cryptography with the cutting-edge innovation of post-quantum algorithms, paving the way for a new era of secure and decentralized finance.
+						</p>
+
+						<p>
+							Join us on this journey to the future of blockchain technology, where the mysteries of the Sphinx are finally unlocked.
+						</p>		
+						
+					</section><!--//section sphinx-->
+					
+					<section class="docs-section" id="item-1-3">
+						<h2 class="section-heading">The goals</h2>
+							<h5>Unlocking the Power of Post-Quantum Technology</h5>
+							<p>
+								Immerse yourself in a revolutionary project that aims to redefine the blockchain landscape. Our mission is to create a decentralized, secure, and transparent network that remains impervious to both classical and quantum computing attacks.
+							</p>
+
+							<br>
+							<h5>Empowering the Community for a Secure Future</h5>
+							<p>
+								Join us on this transformative journey as we provide a platform that empowers individuals and businesses alike with secure and transparent transactions, data storage, and applications.
+							</p>
+
+							<br>
+							<h5>Our Goals</h5>
+								<p>
+									1. Develop a cutting-edge blockchain platform based on state-of-the-art post-quantum cryptography.
+								</p>
+
+								<p>
+									2. Embrace the spirit of collaboration and innovation by making our platform open source, enabling free usage and development by the community.
+								</p>
+
+								<p>
+									3. Equip developers with powerful tools and resources to effortlessly build applications on our robust platform.
+								</p>
+
+								<p>
+									4. Enlighten the world about the extraordinary benefits of blockchain technology and the paramount significance of security.
+								</p>
+							
+							<br>
+							<h5>Unlocking the Potential</h5>
+								<p>
+									1. Our project is driven by the community, fostering an environment of openness and shared knowledge.
+								</p>
+
+								<p>
+									2. Designed to be highly scalable and efficient, our platform lays the foundation for unlimited growth and widespread adoption.
+								</p>
+
+								<p>
+									3. With impenetrable security against classical and quantum computing attacks, your data and transactions remain safeguarded.
+								</p>
+
+								<p>
+									4. From financial applications to supply chain management and voting systems, our platform supports a wide array of web3 use cases, unlocking boundless possibilities.
+								</p>
+
+								<p>
+									5. Embrace the future of technology with confidence as our project becomes an invaluable resource for developers and businesses alike, forging a more secure and decentralized digital world.
+								</p>
+							
+						</section><!--//section-->
+						
+						<section class="docs-section" id="item-1-4">
+							<h2 class="section-heading">Unleashing the Power of Community and Security</h2>
+							<p>
+								Experience the transformative benefits of blockchain technology, accessible to all, regardless of technical expertise. Our mission is to provide user-friendly tools and resources that empower developers and businesses to effortlessly build and deploy applications on the blockchain
+							</p>
+
+							<p>
+								Embrace blockchain technology for a multitude of purposes, such as secure financial transactions, efficient supply chain management, and trustworthy voting systems. We achieve this by educating the public about the remarkable advantages of blockchain and collaborating with the community to drive widespread adoption.
+							</p>
+
+							<p>
+								Cultivate a vibrant community comprising developers, businesses, and users who are wholeheartedly committed to the growth and utilization of blockchain. Through forums, discussions, and collaborative initiatives, we foster an environment of innovation, enabling the creation of novel applications and services on the blockchain.
+							</p>
+
+							<p>
+								Harness the power of blockchain to create immutable records, fortifying defenses against malicious attacks aiming to tamper with or delete crucial data. For instance, blockchain can serve as an incorruptible ledger for storing voting records, ensuring the integrity of democratic processes.
+							</p>
+
+							<p>
+								By accomplishing these pivotal objectives, our open-source post-quantum blockchain layer 1 project will contribute to the establishment of a more secure and resilient digital world.
+							</p>
+
+							<p>
+								Beyond the examples mentioned above, blockchain holds the potential to enhance cybersecurity and defense in various other ways. For instance, it can:
+							</p>
+
+							<p>
+								<h5>1. Achieving Quantum Resistance:</h5> Our primary objective is to develop a blockchain infrastructure that is resistant to attacks from quantum computers. By integrating post-quantum cryptographic algorithms, we aim to ensure the long-term security and sustainability of our blockchain network.
+							</p>
+
+							<p>
+								<h5>2. Scalability Improvements:</h5> We strive to overcome the scalability challenges faced by existing blockchain networks. Through innovative architectural design and novel techniques such as sharding and off-chain computations, we aim to significantly improve the scalability of our blockchain layer 1 solution.
+							</p>
+
+							<p>
+								<h5>3. Enhanced Security:</h5> Security is of utmost importance in blockchain technology. We aim to provide enhanced security measures that protect against both traditional and quantum-based attacks. By leveraging post-quantum cryptography, advanced threat modeling, and robust key management practices, we aim to ensure the integrity and confidentiality of transactions within our blockchain.
+							</p>
+
+							<p>
+								<h5>4. Improved Performance:</h5> Alongside scalability improvements, we aim to enhance the overall performance of our blockchain network. Through optimized consensus protocols, efficient transaction models, and innovative data structures, we strive to achieve faster transaction processing times and lower latency.
+							</p>
+
+							<p>
+								<h5>5. Decentralization:</h5> We believe in the fundamental principles of decentralization. Our objective is to create a truly decentralized blockchain ecosystem, where power and decision-making are distributed among network participants. We aim to foster a community-driven approach to governance and ensure inclusivity and transparency in our project.
+							</p>
+
+							<p>
+								By achieving these objectives, we aim to revolutionize the blockchain industry and establish a quantum-resistant future for blockchain technology. Through our project, we seek to redefine the boundaries of blockchain security, scalability, and performance while maintaining the core principles of decentralization and trust.
+							</p>
+					</section><!--//section-->
+			    </article><!--//introduction group-->
+	
+			    <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Post-quantum blockchain</h1>
+					    <section class="docs-intro">
+							<p>
+								Today in 2023 we talking about quantum-computers is not sounds like we talk about this mechine back to in 2005, since thats century quantum-computers has significant grown and promising to solve the largest problem in our today's technology limitations.
+							</p>
+							
+								<h5>Quantum-computers today:</h5>
+										<p>
+											<i class="fas fa-external-link-alt"></i> <a class="docs-theme-link" href="https://www.ibm.com/quantum/roadmap" target="_blank">IBM Roadmap</a>.
+										</p>
+		
+										<p>
+											<i class="fas fa-external-link-alt"></i> <a class="docs-theme-link" href="https://newsroom.ibm.com/2023-05-21-IBM-Launches-100-Million-Partnership-with-Global-Universities-to-Develop-Novel-Technologies-Towards-a-100,000-Qubit-Quantum-Centric-Supercomputer" target="_blank">IBM quantum centric 100,000 qubits</a>.
+										</p>
+	
+										<p>
+											<i class="fas fa-external-link-alt"></i> <a class="docs-theme-link" href="https://ec.europa.eu/commission/presscorner/detail/en/ip_22_5914" target="_blank">(EuroHPC JU) quantum-computers</a>.
+										</p>
+								
+								<br>
+								<h5>1. The end of classical era</h5>
+								<p>
+									For decades <span><a class="docs-theme-link" href="https://ourworldindata.org/moores-law" target="_blank">Moore's Law</a></span> has guided the exponential growth of classical computing power. It states that the number of transistors on a microchip doubles approximately every two years, leading to remarkable advancements. However, we are approaching the maximum capacity of classical computing using this law.
+								</p>
+								<p>
+									As transistors become smaller, we face significant challenges in miniaturization. The physical limitations of classical computers will hinder further progress. This limitation signals the end of the classical algorithm and computers, prompting us to seek new approaches.
+								</p>
+
+								<h5>2. The Advantages of Quantum Computers</h5>
+								<p>
+									Quantum computing takes advantage of the laws of quantum mechanics found in nature and represents a fundamental change from classical information processing. Two properties of quantum behavior – superposition and entanglement – may allow quantum computers to solve problems intractable for today’s conventional, or classical, machines:
+								</p>
+
+								<p>
+									— Superposition. A classical computer uses binary bits that can only depict either a “1” or a “0.” Instead, quantum computers use qubits that can depict a “1”, a “0”, or any combination (or “superposition”) of the qubits’ possible states. Therefore, a quantum computer with n qubits can have all 2n possibilities in superposition with one another. This supplies quantum computers with an exponential set of states they can explore to solve certain types of problems better than classical computers.
+								</p>
+
+								<p>
+									— Entanglement. In the quantum world, two qubits located even light-years apart can still act in ways that are strongly correlated. Quantum computing takes advantage of this entanglement to encode problems that exploit interdependence between qubits.
+								</p>
+
+								<p>
+									The quantum properties of superposition and entanglement help enable quantum computers to rapidly explore an enormous set of possibilities to identify an optimal answer that could drive business value. As future quantum computers can calculate certain answers exponentially faster than today’s classical machines, they will enable tackling business problems that are exponentially more complex. Despite classical computers’ limitations, quantum computers are not expected to replace them in the foreseeable future. Instead, hybrid quantum-classical architectures are expected to emerge that “outsource” portions of difficult problems to a quantum computer.
+								</p>
+
+								<p>
+									Quantum computing appears set to potentially transform certain industries. For instance, current computational chemistry methods rely heavily on approximation because the exact equations cannot be solved by classical computers. But, quantum algorithms are expected to deliver accurate simulations of molecules over longer timescales, currently impossible to model precisely. This could enable life-saving drug discoveries and significantly shorten the number of years required to develop pharmaceuticals.
+								</p>
+
+
+
+								<h5>3. The Obsolescence of Classical Algorithms</h5>
+								<p>
+									As we enter the quantum era, classical algorithms will become obsolete and irrelevant. Quantum algorithms, such as Shor's algorithm, possess the power to break the cryptographic foundations on which blockchain technology relies.
+								</p>
+
+								<p>
+									This poses a significant threat to the security and integrity of existing blockchain systems. The immutability and trust that blockchain provides can be compromised by quantum attacks. It is crucial for blockchain foundations to adapt and transition towards quantum-resistant algorithms.
+								</p>
+
+								<p>
+									By embracing quantum-resistant algorithms, blockchain platforms can ensure the long-term viability and security of their systems. Proactive measures are necessary to protect user data, maintain the integrity of transactions, and preserve trust within the blockchain community.
+								</p>
+
+							<p>
+								As the quantum era unfolds, it is vital for blockchain foundations to understand the implications and adapt accordingly. By acknowledging the limitations of Moore's Law, recognizing the advantages of quantum computers, and preparing for the obsolescence of classical algorithms, blockchain technology can thrive in this new era.
+							</p>
+							<p>
+								Embracing quantum computing will foster innovation, enhance security, and open doors to groundbreaking possibilities. Let us take this transformative journey together, ensuring that the blockchain community remains at the forefront of technological advancements.
+							</p>				
+                        
+                       
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">NIST PQC</h2>
+						<p>
+							After six years of research and development, the National Institute of Standards and Technology (NIST) has announced the first four quantum-resistant encryption algorithms. The chosen algorithms, CRYSTALS-KYBER, CRYSTALS-Dilithium, Falcon, and SPHINCS+, are designed to withstand attacks from future quantum computers, which are expected to be significantly more powerful than the current generation of machines.
+
+						<p>
+							The announcement marks a significant milestone in NIST's post-quantum cryptography standardization project. The chosen algorithms will now undergo further testing and evaluation before being finalized and published as NIST standards. Once finalized, these algorithms will be used to protect sensitive data from attack by quantum computers.
+						</p>
+
+						<p>
+							The development of quantum-resistant encryption is a critical step in ensuring the security of our digital infrastructure. As quantum computers become more powerful, they pose a serious threat to the security of our current encryption systems. The chosen algorithms will help to ensure that our data remains secure even in the face of this threat.
+						</p>
+
+						<div class="table-responsive my-4">
+							<table class="table table-bordered table-dark">
+							  <thead>
+								<tr>
+								  <th scope="col">#</th>
+								  <th scope="col">Algorithm</th>
+								  <th scope="col">Function</th>
+								  <th scope="col">Construction</th>
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+								  <th scope="row">1</th>
+								  <td>CRYSTALS-Kyber</td>
+								  <td>Public Key Encryption</td>
+								  <td>Lattice-based</td>
+								</tr>
+								<tr>
+								  <th scope="row">2</th>
+								  <td>CRYSTALS-Dilithium</td>
+								  <td>Digital Signatures</td>
+								  <td>Lattice-based</td>
+								</tr>
+								<tr>
+								  <th scope="row">3</th>
+								  <td>FALCON</td>
+								  <td>Digital Signatures</td>
+								  <td>NTRU Lattice-based</td>
+								</tr>
+								<tr>
+								  <th scope="row">4</th>
+								  <td>SPHINCS+</td>
+								  <td>Digital Signatures</td>
+								  <td>Hash-based</td>
+								</tr>
+							  </tbody>
+							</table>
+						  </div><!--//table-responsive-->
+						  
+						<h5 class="mt-5">NIST announce first four PQC:</h5>
+						<p>
+							<i class="fas fa-external-link-alt"></i> <a class="docs-theme-link" href="https://www.nist.gov/news-events/news/2022/07/nist-announces-first-four-quantum-resistant-cryptographic-algorithms" target="_blank">Announcement</a>
+						</p>
+
+						<p>
+							The significance of this announcement as a crucial step in safeguarding our sensitive data against potential cyberattacks from quantum computers. NIST's exceptional expertise and dedication to pioneering technology, enabling us to proactively protect electronic information.
+						</p>
+						
+						
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-2">
+						<h2 class="section-heading">PQC Lattice-based KEMs</h2>
+						<h5 class="mt-5">Crystals-kyber paper:</h5>
+						<p>
+							<i class="fas fa-external-link-alt"></i> <a class="docs-theme-link" href="https://pq-crystals.org/kyber/data/kyber-specification-round3-20210804.pdf" target="_blank">Docs</a>
+						</p>
+						<p>
+							In 1996, Miklós Ajtai made a significant contribution to  <span><a class="docs-theme-link" href="https://en.wikipedia.org/wiki/Lattice-based_cryptography" target="_blank">Lattice-based cryptography</a></span> by introducing a cryptographic construction that relied on the hardness of lattice problems. Collaborating with Cynthia Dwork, they demonstrated the difficulty of solving the Short Integer Solutions (SIS) problem, an average-case lattice problem, which proved to be as challenging as worst-case lattice problems.
+						</p>
+
+						<p>
+							Two years later, Jeffrey Hoffstein, Jill Pipher, and Joseph H. Silverman introduced a lattice-based public-key encryption scheme called NTRU. Although their scheme did not demonstrate the same level of hardness as solving a worst-case lattice problem, it marked an important milestone in lattice-based cryptography.
+						</p>
+							
+						<p>
+							In 2005, Oded Regev presented the first lattice-based public-key encryption scheme with a security proof based on worst-case hardness assumptions. Regev's work also introduced the Learning with Errors (LWE) problem. Since then, researchers have dedicated significant efforts to improving the security proofs and efficiency of Regev's original scheme.
+						</p>
+							
+						<p>
+							The field of lattice-based cryptography has witnessed extensive development, with additional cryptographic primitives being constructed based on LWE and related problems. Notably, Craig Gentry introduced the first fully homomorphic encryption scheme in 2009, which was also based on a lattice problem.
+						</p>
+							
+						<p>
+							The history of quantum computing and post-quantum cryptography spans several decades, with numerous algorithms developed since 1996. The NIST Post-Quantum Cryptography Competition has been a significant milestone in this journey, aiming to standardize post-quantum cryptographic algorithms. The European Commission has also played a vital role in funding the PQCRYPTO project, which focuses on the development of post-quantum cryptography since 2015.
+						</p>
+						<br>
+						<h5>Crystals-kyber comparation to AES:</h5>
+						<div class="table-responsive my-4">
+							<table class="table table-bordered table-dark">
+							  <thead>
+								<tr>
+								  <th scope="col">#</th>
+								  <th scope="col">Algorithm</th>
+								  <th scope="col">Security Level</th>
+								  <th scope="col">Equivalent AES</th>
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+								  <th scope="row">1</th>
+								  <td>Kyber-512</td>
+								  <td>High</td>
+								  <td>AES-128</td>
+								</tr>
+								<tr>
+								  <th scope="row">2</th>
+								  <td>Kyber-768</td>
+								  <td>Very High</td>
+								  <td>AES-192</td>
+								</tr>
+								<tr>
+								  <th scope="row">3</th>
+								  <td>Kyber-1024</td>
+								  <td>Extremely High</td>
+								  <td>AES-256</td>
+								</tr>
+							  </tbody>
+							</table>
+						  </div><!--//table responsive-->
+
+						  <p>
+							CRYSTALS-Kyber algorithm is based on lattice-based cryptography. It utilizes the hardness of certain mathematical problems associated with lattices to provide secure key exchange. The specific mathematical problem it relies on is called the Learning with Errors (LWE) problem over modular lattices.
+						  </p>
+
+						  <p>
+							In the CRYSTALS-Kyber scheme, the security of the key exchange is based on the assumption that solving the LWE problem is computationally difficult. The scheme involves generating public and private keys, and during the key exchange, the parties use these keys to establish a shared secret key securely. The security of the scheme lies in the difficulty of an attacker solving the LWE problem and obtaining the shared secret key without knowing the private key
+						  </p>
+
+						  <h5 class="mt-5">Mathematical underlying:</h5>
+							<p>
+							<i class="fas fa-external-link-alt"></i> <a class="docs-theme-link" href="https://www.mdpi.com/2227-7390/10/15/2579" target="_blank">Lattice-based</a>
+							</p>
+
+							<h5>1. Lattices</h5>
+								<p>
+									A lattice in <code>ℝ<sup>n</sup></code>, denoted by <code>L</code>, is generated by a set of linearly independent vectors <code>𝐵 = {𝐛<sub>1</sub>, 𝐛<sub>2</sub>, ..., 𝐛<sub>m</sub>}</code>. It is the set of all integer linear combinations <code>𝐵𝑥 = ∑𝐛<sub>𝑖</sub>𝑥<sub>𝑖</sub></code>, where <code>𝑥 ∈ ℤ<sup>m</sup></code>. The vectors <code>𝐛<sub>1</sub>, 𝐛<sub>2</sub>, ..., 𝐛<sub>m</sub></code> form a basis for <code>L</code>.
+								</p>
+								
+								<p>
+									The lattice <code>L</code> can be generated using a matrix <code>B</code>, where the basis vectors are represented as column vectors.
+								</p>
+
+							<br>
+							<h5>2. Computational Lattice Problems</h5>
+								<p>
+									The unique structure of lattices allows for efficient evaluation of certain computations using linear algebra algorithms. The following problems can be solved efficiently:
+								</p>
+
+								<p>
+									a.) Basis Computation: Given a set of vectors <code>𝑔<sub>1</sub>, 𝑔<sub>2</sub>, ..., 𝑔<sub>𝑘</sub></code> that generate the lattice <code>L</code>, compute a basis <code>𝑏<sub>1</sub>, 𝑏<sub>2</sub>, ..., 𝑏<sub>𝑚</sub></code> for <code>L</code>.
+								</p>
+
+								<p>
+									b.) Membership Testing: Determine whether a given vector <code>c</code> belongs to the lattice <code>L</code>.
+								</p>
+
+								<br>
+								<p>
+									Computational lattice problems are generally challenging and are believed to resist attacks such as Shor's algorithm. These problems are of interest for post-quantum cryptography. Here are two such problems:
+								</p>
+
+								<p>
+									a.) Shortest Vector Problem (SVP): Given a lattice <code>L</code> with basis <code>B ∈ ℝ<sup>n×m</sup></code> and a norm <code>∥·∥</code>, find a nonzero vector <code>l ∈ L</code> such that <code>∥l∥</code> is the shortest length among all nonzero lattice vectors.
+								</p>
+
+								<p>
+									b.) Closest Vector Problem (CVP): Given a lattice <code>L</code> with basis <code>B ∈ ℝ<sup>n×m</sup></code> and a norm <code>∥·∥</code>, find a lattice vector <code>l ∈ L</code> that minimizes the distance <code>∥l - q∥</code> to a given vector <code>q ∈ ℝ<sup>n</sup></code>.
+								</p>
+
+								<p>
+									An illustration of the shortest vector problem, showcasing a shortest vector within a lattice. Demonstrates the closest vector problem, depicting a random point and its corresponding closest lattice vector.
+								</p>
+
+								<p>
+									These computational problems highlight the intricate nature of lattices and their significance in cryptographic applications.
+								</p>
+
+							<br>
+							<h5>3. LWE Fundamentals:</h5>
+								  <p>
+									Let <code>ℤq = ℤ/qℤ</code> be the ring of integers modulo <code>q</code>. We can create <code>a</code> linear equation system <code>A · s = b</code>, where <code>A ∈ ℤq<sup>m×n</sup></code>, <code>s ∈ ℤq<sup>n</sup></code>, and <code>b ∈ ℤq<sup>m</sup></code>. For example, consider the following system:
+								  </p>
+
+								  <pre>
+		A = [10 3 5 1; 4 1 1 2; ...; 3 1 1 5]
+		b = [10 3 ... 8]
+									</pre>
+
+								  <p>
+									Then, the associated equations look like:
+								  </p>
+
+								  <pre>
+		10 · s₁ + 3 · s₂ + 5 · s₃ + 1 · s₄ = 10
+		4 · s₁ + 1 · s₂ + 1 · s₃ + 2 · s₄ = 3
+		...
+		3 · s₁ + 1 · s₂ + 1 · s₃ + 5 · s₄ = 8
+									</pre>
+
+								  <p>
+									Solving this equation system can be efficiently done using the Gaussian algorithm. However, adding even small error values <code>e ∈ ℤq<sup>m</sup></code> to the equation system yields:
+								  </p>
+
+								  <pre>
+		A · s + e = b
+								</pre>
+								  <p>
+									which makes solving the equation system and retrieving the solution vector s surprisingly hard. This hardness is related to the difficult lattice problems described above.
+								  </p>
+
+							<br>
+							<h5>4. Decisional LWE</h5>
+								<p>
+									The LWE problem can also be posed as a decision problem, abbreviated as dLWE. Given an LWE sample (<code>A, b</code>) as defined above (with <code>s</code> and <code>e</code> kept secret), the task is to guess whether the values of <code>b</code> have been calculated as <code>A · s + e</code> with small error values <code>e</code> or whether they have been chosen arbitrarily. Both variants are equally hard. The reduction from LWE to dLWE has been proven by Regev (Regev, Lemma 4.2), and the inverse reduction from dLWE to LWE is trivial.
+								</p>
+							
+							<br>
+							<h5>5. Linking LWE to Computational Lattice Problems</h5>
+								<p>
+									Consider an LWE problem of the form <code>A · s + e = b</code>, where <code>A ∈ ℤq<sup>m×n</sup></code>, <code>s ∈ ℤq<sup>n</sup></code>, and small vectors <code>e ∈ ℤq<sup>m</sup></code>, <code>b ∈ ℤq<sup>m</sup></code>. We can solve <code>a</code> concrete LWE instance by solving the closest vector problem. The closest vector to <code>b</code> is often the lattice vector <code>A · s</code> with distance <code>e</code>.
+								</p>
+
+								<p>
+									To understand the relationship between learning with errors and the shortest vector problem, consider the lattice <code>L = {v ∈ ℤ<sup>n+1</sup> | (v|v′) · A = 0 mod q}</code>, where the operator <code>'||'</code> denotes concatenation and <code>A</code> is the <code>n×n</code> identity matrix. It can be observed that the column vector (<code>s, e, 1</code>) is an element of <code>L</code> by verifying that <code>(A|(-A)) · (s, e, 1) = A · s + e = b = 0 holds</code>. It can be shown that the vector (<code>s, e, 1</code>) is a shortest vector in <code>L</code> and, therefore, a solution for the Shortest Vector Problem (SVP) for <code>L</code>. This means retrieving the vector (<code>s, e, 1</code>) directly yields the secret <code>s</code> and the error vector <code>e</code>, effectively solving the LWE system.
+								</p>
+							
+							<br>
+							<h5>6. LWE-Based Encryption Schemes</h5>
+							
+								<p>
+									This section provides a high-level introduction to LWE-based encryption schemes to facilitate an easy understanding of their basic idea. The following simplified example is used to transmit a message consisting of a single bit, but it can be extended to transmit a bitstring of any length.
+								</p>
+
+								<p>
+									Consider an LWE instance <code>A · s + e = b</code>, where <code>A ∈ ℤq<sup>m×n</sup></code> is chosen. The goal of LWE-based encryption schemes is to leverage the hardness of the LWE problem to design secure encryption schemes. These schemes typically involve a public key and a private key, allowing for secure communication between parties.
+								</p>
+
+								  <h5>Callout:</h5>
+							<div class="callout-block callout-block-warning">
+								
+								<div class="content">
+									<h4 class="callout-title">
+										<span class="callout-icon-holder me-1">
+											<i class="fas fa-info-circle"></i>
+										</span><!--//icon-holder-->
+										Note
+									</h4>
+									<p>
+										Please note that while this PQC algorithm is designed to resist attacks from both classical and quantum computers, it is not entirely immune to vulnerabilities. Known side-channel attacks, in particular, pose a potential risk to its security. Therefore, it is important to remain cautious and take additional measures to protect your data and systems from potential threats.
+									</p>
+								</div>
+							</div> 				
+                        
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">PQC "Stateless" Hash-based digital signature</h2>
+						<p>
+							From Lamport to PQC SPHINCS+
+						</p>
+						<br>
+						<h4>1. Lamport signature:</h4>
+							<p>
+								In 1979, Leslie Lamport introduced a groundbreaking method for one-time signatures. Lamport's approach involved the creation of two data sets comprising 256 random 256-bit numbers, referred to as Set A and Set B. Each of these sets formed the private key, consisting of a total of 512 values. By hashing each random number, a corresponding set of 512 hashes was derived, which constituted the public key. This article explores Lamport's method, highlights its limitations, and delves into the subsequent development of Merkle trees as a solution.
+							</p>
+
+
+							<h6>Lamport Method:</h6>
+							<p>
+								Lamport's method operates by hashing the message and then examining each bit of the resulting hash (ranging from 0 to 255). If a bit is 0, the corresponding element from Set A is used; otherwise, the corresponding element from Set B is employed. The signature itself comprises 256 random numbers selected from either Set A or Set B, while the public key consists of the 512 generated hashes. Notably, both the public and private keys measure 16KB in size, making Lamport signatures computationally demanding.
+							</p>
+
+
+							<h6>Limitations of Lamport Signatures:</h6>
+							<p>
+								Despite its innovative nature, the Lamport method suffers from a fundamental drawback. With this approach, a unique key pair is required for each individual message, which poses scalability and efficiency challenges. Recognizing this limitation, researchers sought alternatives that could overcome the need for a new key pair for every message.
+							</p>
+
+
+						<br>
+						<h4>2. The Emergence of Merkle Trees:</h4>
+							<p>
+								In the same year as Lamport's groundbreaking work, a solution to the key pair issue arose through the concept of Merkle trees. Merkle trees, named after Ralph Merkle, are a hashing technique widely used in various applications, including Bitcoin, Ethereum, Git distribution systems, No SQL databases, and P2P networks. By hashing and pairing data elements, Merkle trees construct a hierarchical structure, culminating in a root element known as the root hash. This root hash serves as proof of knowledge of all other hashes in the tree while keeping them concealed.
+							</p>
+
+							<h6>Utilizing Merkle Trees for Signatures:</h6>
+							<p>
+								The utilization of Merkle trees in the context of signatures presented a significant advancement. Instead of creating a new key pair for each message, Merkle trees allowed for the authentication of multiple messages with a single key pair. This was achieved through the concept of Many-Time Signatures (MTS) within a hypertree. By employing a hierarchical structure, MTS enabled the authentication of a large number of Few-Time Signatures (FTS) key pairs.
+							</p>
+					
+						<br>
+						<h4>3. One time signature:</h4>
+						<p>
+							In the pursuit of improving the performance and reducing key sizes of signature methods, Robert Winternitz proposed the Winternitz One-Time Signature (W-OTS). Named after its creator, W-OTS allows for the simultaneous signing of multiple bits, presenting a significant advancement in the field. This article explores the principles and methodology behind W-OTS, shedding light on its key features and demonstrating its functionality through a visual illustration.
+						</p>
+						
+						<h6>Winternitz OTS Method:</h6>
+						<p>
+							The Winternitz OTS method begins by generating 32 random numbers, each consisting of 256 bits. These 32 values constitute the private key. Subsequently, each of these values undergoes 256 iterations of hashing, resulting in the generation of 32 corresponding values that form the public key.
+						</p>
+						<p>
+							To create a signature using W-OTS, the message is hashed using the SHA-256 algorithm. This process yields 32 8-bit values, denoted as <code>N1, N2, ..., N32</code>. Each of these 8-bit values is then utilized to determine the number of iterations for subsequent hashing operations. Specifically, the value N determines the number of times the 8-bit signature value will be hashed (<code>256 - N</code> times).
+						</p>
+						<p>
+							To verify the signature, the original message is hashed using SHA-256 once again. The resulting hash is then processed by examining each 8-bit value. For each value, the 8-bit signature value is hashed a number of times equal to the corresponding message hash value <code>(N1, N2, ...)</code>. The outcome of each operation should equal the corresponding value in the public key.
+						</p>
+						<br>
+						<h4>4. HORS:</h4>
+						<p>
+							Hash to Obtain Random Subset (HORS) is an advanced quantum-robust, hashed-based one-time signature scheme. By leveraging the power of hashing and indexing, HORS enables the creation of private and public key pairs to achieve secure and unique signatures. This article explores the methodology behind HORS, highlighting its key steps and demonstrating its application through a simple example.
+						</p>
+
+						<h6>HORS Methodology:</h6>
+						<p>
+							The HORS method begins by generating a series of integers to serve as private key values. These values, ranging from priv0 to priv255, are organized in an indexable form. Subsequently, each private key value undergoes a hashing process, resulting in a list of corresponding public key values, denoted as pub. These public key values are indexed for future reference.
+						</p>
+						<br>
+						<h4>5. XMSS Hash-based signature schemes:</h4> 
+						<p>
+							Such as the Merkle Signature Scheme (MSS), have played a vital role in various applications. However, MSS suffers from performance and memory limitations. To overcome these challenges, enhanced methods like XMSS and SPHINCS have emerged. This article delves into the drawbacks of XMSS and introduces SPHINCS, a stateless variant that addresses the state-related issues while preserving the core methods of XMSS.
+						</p>
+
+						<h6>Merkle Signature Scheme (MSS):</h6>
+						<p>
+							The core principle behind MSS lies in Merkle trees, which enable efficient hashing and verification of data elements. However, MSS encounters significant performance and memory concerns, limiting its practicality in certain scenarios.
+						</p>
+
+						<h6>XMSS and its Stateful Nature:</h6>
+						<p>
+							To enhance the efficiency of MSS, the XMSS method was introduced. XMSS reduces the performance overhead associated with MSS but introduces a stateful nature to the signature scheme. This statefulness implies that private keys must be retained and not reused, posing challenges in managing and securing a growing number of private keys.
+						</p>
+						<br>
+						<h5>"The problem with XMSS is because it is Statefull"</h5>
+
+						<br>
+						<br>
+						<h2>SPHINCS+:</h2>
+						<p>
+							SPHINCS+ (Stateless" PHotonic Isogeny-based Signature Scheme), a hybrid signature scheme that combines hash-based, code-based, and isogeny-based components to achieve statelessness and post-quantum security.
+						</p>
+						<p>
+							In a post-quantum world, where powerful quantum computers exist, the need to eliminate or reduce reliance on state in cryptographic systems arises due to the potential impact of quantum computing on traditional cryptographic algorithms.
+						</p>
+
+						<p>
+							The idea behind "stateless digital signature" is to eliminate the state that is stored by the signer between signatures, why? because quantum-computers using superposition that means it can in the two probability in multiple states at once. This state can be used by an attacker to forge signatures, so eliminating it makes the signature scheme more secure.
+						</p>
+
+						<p>
+							In a stateful digital signature scheme, the signer stores a secret key and a signing state between signatures. The signing state is used to generate the signatures, and it can be used by an attacker to forge signatures if they are able to obtain it.
+						</p>
+
+						<p>
+							In a stateless digital signature scheme, the signer does not store any state between signatures. Instead, the signing state is generated on the fly when the signer wants to create a signature. This makes it much more difficult for an attacker to forge signatures, as they would need to obtain the secret key and the random seed that was used to generate the signing state.
+						</p>
+
+						<p>
+							Stateless digital signature schemes are more efficient than stateful digital signature schemes, as they do not require the signer to store any state between signatures. They are also more secure, as they are less vulnerable to attacks.
+						</p>
+							
+						<p>
+							Stateful cryptographic systems typically involve the storage of sensitive information, such as secret keys or internal states, which are used to perform cryptographic operations. These systems can be more vulnerable to attacks in a post-quantum world because quantum computers could potentially exploit the stored information to compromise the security of the system.
+						</p>
+							
+						<p>
+							By eliminating or reducing state in cryptographic systems, the aim is to develop stateless algorithms that do not rely on the storage of sensitive information or the maintenance of long-term states. Stateless algorithms operate solely based on the input provided at the time of the cryptographic operation without relying on any stored information. This can potentially enhance the security of cryptographic systems against attacks that target the stored information.
+						</p>
+							
+						<p>
+							Statelessness can reduce the attack surface and mitigate certain types of attacks, such as side-channel attacks that aim to extract sensitive information from the system's state. By eliminating state, cryptographic systems become more resistant to attacks that target stored secrets or exploit vulnerabilities in state management.
+						</p>
+
+						<h5 class="mt-5">SPHINCS+ paper:</h5>
+						<p>
+							<i class="fas fa-external-link-alt"></i> <a class="docs-theme-link" href="https://sphincs.org/data/sphincs+-round3-specification.pdf" target="_blank">Docs</a>
+						</p>
+
+						<div class="simplelightbox-gallery row mb-3">
+							<div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/sphincs+_fig1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/sphincs+_fig1.png" alt="" title="Figure 1"/></a>
+							</div>
+							<div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/sphincs+_fig2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/sphincs+_fig2.png" alt="" title="Figure 2"/></a>
+							</div>
+							<div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/sphincs+_fig3.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/sphincs+_fig3.png" alt="" title="Figure 3"/></a>
+							</div>
+						</div><!--//col-->
+						<br>
+						<p>
+							<h6>Figure 1</h6>
+							  summarizes a SPHINCS+ hypertree. It is composed of FTS and OTS nodes representing FTS and OTS trees, respectively. The hypertree is composed of hash nodes, forming the root of a tree inside a layer. Each root is connected to an OTS node, storing a WOTS+ leaf. The objects in gray correspond to the authentication path of each select OTS node. The root of the SPHINCS+ hypertree, pk, is the signature scheme’s public key.
+						</p>
+
+						<p>
+							The lowest layer is formed by FTS nodes that are FORS trees, responsible for signing a message. A message, represented by the envelope, is signed using a combination of leaves picked up from each of the FTS trees. These leaves are addressed by a string formed by a random value and the digest of the signed message. The random value is used to mitigate side-channel attacks if someone stores any information from several signatures.
+						</p> 
+
+						<br>
+						<h6>Figure 2</h6> 
+						<p>
+							An illustrates a FORS tree. It is composed by k FTS trees with t leaves and height <code>b = log2(t)</code>.
+						</p>
+
+						<br>
+						<h6>Figrure table 3</h6>
+						<p>
+							The parameter n is the size in bytes of the digest generated by the hash function used by the SPHINCS+ signature scheme; the parameter <code>h</code> corresponds to the hypertree height and defines the maximum number of signa- tures <code>(2h)</code> that can be performed; the parameter <code>d</code> is the number of layers of the hypertree; the parameter <code>w</code>, Winternitz parameter, is the number of bits to be signed simultaneously in a WOTS+ signature, providing a trade-off between signing time and signature size; the parameter <code>k</code> is the number of FTS trees in a FORS tree and, finally, the parameter <code>b</code> is the FORS tree height.
+						</p>
+
+						<p>
+							The parameter len is the number of n-byte blocks that form a WOTS+ signature. 
+						</p>
+						<p>
+							It is given by <code>len = len1 + len2,</code> where <code>len1 = ⌈ 8n log2(w)
+							⌉ and len2 = ⌊log2(len1(w−1))⌋. log2(w)</code>
+							The parameter <code>len1</code> is the number of integers, between <code>0</code> and <code>w - 1</code>, that represents the hash digest of the WOTS+ message to be signed. The parameter <code>len2</code> is the number of integers, between <code>0</code> and <code>w - 1</code>, used to represent the WOTS+ checksum, needed to avoid signatureforgery. SPHINCS+ parameters influenc eover it ssignature size, performance and security. The signature size has <code>(h + k · (b + 1) + d · len + 1)n</code> bytes
+						</p>
+
+						<br>
+						<h6>Key Generation Process</h6>
+						<p>
+							The key generation process is influenced by <code>h</code>, <code>d</code>, <code>w</code>, and <code>len</code> parameters. For <code>a</code> fixed value of <code>h</code>, the larger <code>d</code>, the faster is the key generation. A smaller value for the Winternitz parameter results in a faster key generation.
+						</p>
+
+						<br>
+						<h6>Signing and Verification Processes</h6>
+						<p>
+							The signing and verification processes are linearly dependent on the parameters <code>k</code> and <code>t</code>. So a FORS tree with a larger number of FTS trees and higher height leads to a slower signing scheme.
+						</p>
+
+						<br>
+						<h6>Security of SPHINCS+</h6>
+						<p>
+							The security of SPHINCS+ is measured statistically. Eq. Gives the probability <code>p</code> that a new message digest selects FORS leaves that are covered by positions already revealed in <code>qs</code> signatures. It represents the probability that a FORS leaf is hit &gamma; times after <code>qs</code> = 2<code>h</code> signatures in a SPHINCS+ signature scheme with hypertree height equal to <code>h</code>, <code>k</code> FORS trees, and <code>t</code> leaves in each FORS tree.
+						</p>
+
+						<pre>
+		<em>p</em> = 1 - 1 - 1 - (1 - &gamma;)<sup><em>k</em> &sdot; <em>qs</em></sup> &sdot; (1 - (1 - &gamma;)<sup><em>qs</em> - &gamma;</sup>)<sup>-1</sup> &sdot; (1 - &gamma;<sup>-1</sup>)
+						</pre>
+
+						<p>The security level <em>s</em> in bits, against quantum computers, for a SPHINCS+ signature scheme is given by eq.</p>
+
+						<pre>
+		<em>s</em> = -log<sub>2</sub> (<em>&gamma;</em> &sdot; <em>k</em> &sdot; <em>qs</em>) - 1 - (1 - &gamma;)<sup><em>k</em> &sdot; <em>qs</em></sup> &sdot; (1 - (1 - &gamma;)<sup><em>qs</em> - &gamma;</sup>)<sup>-1</sup> &sdot; (1 - &gamma;<sup>-1</sup>) / (2 &sdot; 28<em>n</em>)
+						</pre>
+
+						<h6>Parameter Exploration</h6>
+						<p>
+							As the parameters <code>h</code>, <code>k</code>, and <code>b</code> are the ones that influence the security level, it is necessary to determine, by parameter-space exploration, the sets of parameters that produce the desired security level.
+						</p>
+
+						<br>
+						<h6>Reducing Signature Size</h6>
+						<p>
+							We work on finding sets of parameters that produce smaller SPHINCS+ signatures, ideal for blockchain operation. The initial approach is made by reducing the maximum number of signatures, as we believe a blockchain user will not need the total number of <code>2<sup>64</sup></code> signatures initially designed to be performed by SPHINCS+. A signature scheme with the capacity of performing at around <code>2<sup>20</sup></code> to <code>2<sup>30</sup></code> signatures is more than enough for a user in a blockchain environment. The next section examines specific sets of parameters that decrease signature size while maintaining at least a 128-bit security level against quantum computers.
+						</p>
+						<br>
+						<p>
+							Among the quantum-resistant signing algorithms, SPHINCS+ distinguishes for being stateless and providing a security level of 128 bits against quantum computers. Nonetheless, compared to RSA and ECDSA, its signature size is an obstacle when used in an environment such as a blockchain, where the signature and public key sizes are fundamental. Hence, this work provides a study on adapting SPHINCS+ to blockchain usage.
+						</p>
+
+						<p>
+							It showed that it is possible to halve the SPHINCS+ signature size, keeping a security level of 128 bits, at the expense of reducing the SPHINCS+ hypertree height, and the total number of possible signatures. Furthermore, this study revealed that by reducing the hypertree height of the original SPHINCS+, it is possible to obtain a digital signature scheme with a smaller signature size and shorter signature creation time, more suitable to blockchain usage.
+						</p>
+
+						<p>
+							<i class="fas fa-external-link-alt"></i> <a class="docs-theme-link" href="https://sol.sbc.org.br/index.php/sbseg/article/download/19229/19058/" target="_blank">Source</a>
+						</p>
+
+						<h5>Callout:</h5>
+							<div class="callout-block callout-block-warning">
+								
+								<div class="content">
+									<h4 class="callout-title">
+										<span class="callout-icon-holder me-1">
+											<i class="fas fa-info-circle"></i>
+										</span><!--//icon-holder-->
+										Note
+									</h4>
+									<p>
+										Please note that while this PQC algorithm is designed to resist attacks from both classical and quantum computers, it is not entirely immune to vulnerabilities. Known hash function attacks, in particular, pose a potential risk to its security. Therefore, it is important to remain cautious and take additional measures to protect your data and systems from potential threats.
+									</p>
+								</div>
+							</div> 	
+
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-4">
+						<h2 class="section-heading">SWIFFTX Lattice-based hash function</h2>
+
+						<h5 class="mt-5">SWIFFTX NIST submission in 2008:</h5>
+						<p>
+							<i class="fas fa-external-link-alt"></i> <a class="docs-theme-link" href="https://csrc.nist.rip/groups/ST/hash/sha-3/Round1/submissions_rnd1.html" target="_blank">SWIFFTX</a>
+						</p>
+
+						<div class="simplelightbox-gallery row mb-3">
+							<div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/swifftx_architecture.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/swifftx_architecture.png" alt="" title="Figure 1"/></a>
+							</div>
+							<div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/swiftx_component.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/swiftx_component.png" alt="" title="Figure 2"/></a>
+							</div>
+						</div><!--//col-->
+
+						<p>
+							SWIFFT is a collection of provably secure hash functions. It is based on the concept of the fast Fourier transform (FFT). SWIFFT is not the first hash function based on FFT, but it sets itself apart by providing a mathematical proof of its security. It also uses the LLL basis reduction algorithm. It can be shown that finding collisions in SWIFFT is at least as difficult as finding short vectors in cyclic/ideal lattices in the worst case. By giving a security reduction to the worst-case scenario of a difficult mathematical problem, SWIFFT gives a much stronger security guarantee than most other cryptographic hash functions.
+						</p>
+
+						<p>
+							SWIFFT is a family of homomorphic hash functions provided as part of a candidate submission to the NIST hash function competition in 2008 by Vadim Lyubashevsky, Daniele Micciancio, Chris Peikert, and Alon Rosen. Unfortunately NIST was reject in first round in SHA3 competition. The family of SWIFFTX has an interesting set of characteristics:
+						<p>
+						
+						<p>
+							1. Provably collision-resistant: it is provably computationally hard to find a binary-valued <code>x</code> given its image under <code>f</code> that is chosen randomly.
+						</p>
+
+						<p>
+							2. Universal: for any <code>x_1,x_2</code> in the domain the probability that <code>f(x_1) = f(x_2)</code> over the choice of <code>f</code> in the family is the inverse of the size of the range.
+						</p>
+
+						<p>
+							3. Regular: if <code>x</code> is distributed uniformly then <code>f(x)</code> is distributed uniformly for any <code>f</code> in the family.
+						</p>
+
+						<p>
+							4. Randomness extractor: even if <code>x</code> is not distributed uniformly, <code>f(x)</code> is distributed uniformly over the choice of <code>f</code> in the family
+						</p>
+
+						<p>
+							5. Homomorphic: each <code>f</code> in the family is homomorphic over the domain.
+						</p>
+								
+						<p>
+							6. Facilitates ZKPoKPs: the resulting hash value can be readily used in ZKPoKPs.
+						</p>
+
+						<p>
+							7. Facilitates post-quantum digital signatures: its homomorphism property enables short post-quantum hash-based digital signature schemes, such as K2SN-MSS.
+						</p>
+
+						<p>
+							8. Constant-time: any <code>f</code> in the family is free of data-dependent branching and therefore facilitates avoidance of timing side-channel attacks.
+						</p>
+
+						<p>
+							SWIFFTX as one of the fastest secure hash functions available, which is collision-resistant and supports zero-knowledge proofs of knowledge of a preimage (ZKPoKP) and post-quantum digital signatures
+						</p>
+
+						<p>
+							The reference to NIST's standardization process for post-quantum cryptography indicates that there is a growing recognition of the need to prepare for the potential threat posed by practical quantum computers. NIST's efforts aim to identify and standardize cryptographic algorithms that can withstand attacks from quantum computers.
+						</p>
+
+						<h5>Callout:</h5>
+							<div class="callout-block callout-block-warning">
+								
+								<div class="content">
+									<h4 class="callout-title">
+										<span class="callout-icon-holder me-1">
+											<i class="fas fa-info-circle"></i>
+										</span><!--//icon-holder-->
+										Note
+									</h4>
+									<p>
+										Please note that while this PQC algorithm is designed to resist attacks from both classical and quantum computers, it is not entirely immune to vulnerabilities. Known hash function attacks, in particular, pose a potential risk to its security. Therefore, it is important to remain cautious and take additional measures to protect your data and systems from potential threats.
+									</p>
+								</div>
+							</div> 	
+						</article>
+					</section><!--//section-->
+
+					<article class="docs-article" id="section-4">
+						<header class="docs-header">
+							<h1 class="docs-heading">Whitepaper</h1>
+
+							<p>
+								This white paper serves as an introduction to the groundbreaking post-quantum blockchain layer 1 project initiated by SPHINX and its founders <i class="fas fa-at"></i> <a class="docs-theme-link" href="https://github.com/cahyaksm" target="_blank">C. Kusuma</a>
+								Since its initial inception in 2023, SPHINX has been at the forefront of open-source software projects, its open to anyone to join and contribute, constantly evolving and pushing the boundaries of technology. In response to the growing threat posed by quantum computers to traditional blockchain networks, SPHINX has embarked on a mission to develop a robust and quantum-resistant layer 1 solution. This paper aims to provide a comprehensive overview of our project, highlighting its objectives, architecture, security measures, and the roadmap for its development.
+							</p>
+
+							<div class="row my-3">
+								<div class="col-md-6 col-12">
+									<div class="col-md-6 col-12">
+										<ul class="list list-unstyled pl-0">
+											<li><a href="https://github.com/SPHINX-HUB-ORG" class="btn btn-secondary" target="_blank"><i class="fas fa-book me-2"></i> Download</a></li>
+										</ul>
+									</div>
+								</div><!--//row-->
+							</section><!--//docs-intro-->
+						</header>
+						<section class="docs-section" id="item-4-1">
+							<h2 class="section-heading">Abstract</h2>
+							<p>
+								A pioneering an open-source post-quantum blockchain layer 1 project designed to address the imminent threat of quantum computers to blockchain security. Our project aims to create a robust and secure blockchain infrastructure that enabled post-quantum cryptography, offering quantum-resistance, enhanced scalability, and improved performance.
+							</p>
+
+							<p>
+								This white paper introduces a post-quantum blockchain layer 1 project that addresses the security vulnerabilities posed by quantum computers to existing blockchain networks. Our solution integrates post-quantum cryptography and innovative architecture to provide a robust and scalable blockchain infrastructure. It aims to achieve quantum resistance, scalability improvements, enhanced security, and decentralization. By leveraging post-quantum cryptographic algorithms and advanced consensus protocols, we aim to revolutionize the blockchain industry and ensure the integrity and confidentiality of transactions. Join us in creating a quantum-resistant future for blockchain technology.
+							</p>
+						   
+						</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-2">
+						<h2 class="section-heading">Introduction</h2>
+						<p>
+							Blockchain technology has transformed industries by providing decentralized and immutable transactional systems. However, the emergence of quantum computers poses a significant threat to the security foundations of existing blockchain networks. Quantum computers have the potential to break traditional cryptographic algorithms, compromising the integrity and confidentiality of blockchain transactions.
+						<p>
+
+						<p>
+							To mitigate this imminent threat, it is crucial to develop a layer 1 solution that can withstand attacks from quantum computers. Post-quantum cryptography offers a promising avenue for addressing these vulnerabilities. By harnessing the principles of quantum-resistant algorithms, we can ensure the long-term security and sustainability of blockchain technology.
+						<p>
+
+						<p>
+							The goal of our post-quantum blockchain layer 1 project is to create a robust and secure blockchain infrastructure that integrates post-quantum cryptography. We aim to develop a system that not only achieves quantum resistance but also provides enhanced scalability and improved performance, laying the foundation for the future of blockchain technology.
+						</p>
+
+						<p>
+							In this white paper, we present a comprehensive overview of our project, highlighting the unique value proposition it offers and detailing its key components and features. By combining post-quantum cryptographic algorithms, advanced consensus mechanisms, and innovative architectural design principles, we aim to revolutionize the blockchain industry and establish a quantum-resistant future.
+						</p>
+
+						<p>
+							Through this project, we seek to address the pressing need for a post-quantum layer 1 solution, safeguarding blockchain networks from the disruptive capabilities of quantum computers. Join us on this journey as we redefine the boundaries of blockchain security and pave the way for a resilient and quantum-resistant decentralized ecosystem.
+						</p>
+						
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-3">
+						<h2 class="section-heading">Problem statement</h2>
+						<p>
+							Existing blockchain networks face a critical vulnerability to quantum attacks, which arise from the rapidly advancing field of quantum computing. Traditional cryptographic algorithms that underpin blockchain security, such as Large integer like ECC family, are susceptible to being cracked by quantum computers, compromising the immutability and confidentiality of transactions.
+						</p>
+					
+						<p>
+							Quantum computers have the potential to render current blockchain systems obsolete by breaking the cryptographic algorithms used to secure transactions and validate consensus. This threat extends to both public and private blockchains, as quantum computers can compromise public key infrastructure, digital signatures, and other cryptographic primitives.
+						</p>
+					
+						<br>
+						<h4>1. ECC can be broken with a well-known vulnerability:</h4>
+						<p>
+							Most existing blockchain technology is using Elliptic Curve for generated key pair, which is that relies on prime integers. These prime integers that protect our private and public keys.
+						</p>
+						<p>
+							Given an instance of the Elliptic Curve Discrete Logarithm Problem (ECDLP), we have a fixed generator point <code>P</code> in an elliptic curve over a finite field <code>Fp</code>, and a fixed point <code>Q</code> in the subgroup generated by <code>P</code>. The goal is to find the unique integer <code>m</code> such that <code>Q = [m]P</code>.
+						</p>
+					
+						<p>
+							Shor's algorithm for breaking ECC involves the use of quantum computing.
+						</p>
+					
+						<p>
+							1. The algorithm starts by creating two registers of qubits, each with a length of <code>n + 1</code>, and initializing them in the <code>|0⟩</code> state.
+						</p>
+					
+						<p>
+							 2. A Hadamard transform <code>(H)</code> is applied to each qubit, resulting in a superposition state.
+						</p>
+					
+						<p>
+							3. Conditioned on the content of the registers, the algorithm performs operations involving the points <code>P</code> and <code>Q</code>, mapping the superposition state to a new state that includes the corresponding multiples of <code>P</code> and <code>Q</code>.
+						</p>
+					
+						<p>
+							The third register is discarded, and a quantum Fourier transform (QFT) is applied to each of the two registers.
+						</p>
+					
+						<p>
+							Finally, the measurement of the first two registers, which hold <code>2(n + 1)</code> qubits in total, provides data that can be used for classical post-processing to compute the discrete logarithm <code>m</code>.
+						</p>
+						
+						<br>
+						<p>
+							<code>
+								<h5>"Important to note: While the threat of quantum computers to ECC, specifically the SECP256K1 is real one, it will takes millions of physical-qubits for quantum-computers to break ECDLP.</h5>
+							</code>
+						</p>
+					
+						<br>
+						<br>
+						<h4>2. ECDSA can be broken with a well-known vulnerability:</h4>
+						<p>
+							Most existing blockchain technology is using Elliptic Curve for digital signature, which is that relies on prime integers. These prime integers that protect our private and public keys.
+						</p>
+					
+						<p>
+							1. In ECDSA, there is a known elliptic curve point denoted as <code>G</code>, and a public key <code>P</code> that is calculated as <code>P = sG,</code> where <code>s</code> is a secret value known only to the signer.
+						</p>
+					
+						<p>
+							2. Shor's algorithm maps the problem of finding the secret value <code>s</code> to a problem in period finding. It does this by defining a function <code>F</code> that takes a pair (<code>a, b</code>) and maps it to the point <code>aG - bP</code>.
+						</p>
+					
+						<p>
+							3. The goal is to find the period <code>d</code> of the function <code>F</code>, which can be achieved using the principles of quantum superposition and quantum Fourier transform (QFT).
+						</p>
+					
+						<p>
+							4. Once the period <code>d</code> is determined, it can be used to recover the private key <code>s</code> by performing certain mathematical operations involving modular division. By finding the private key <code>s</code>, an attacker can forge signatures and break ECDSA.
+						</p>
+					
+						<p>
+							It is important to note that Shor's algorithm and the details of quantum computing involve complex mathematical concepts, including quantum superposition, QFT, and modular arithmetic. These concepts enable the quantum computer to efficiently solve the problem of finding the private key in ECDSA, which would be computationally infeasible for classical computers.
+						</p>
+
+						<br>
+						<br>
+						<p>
+							<code>
+								<h5>"Important to note: While the threat of quantum computers to ECC, specifically the SECP256K1 is real one, it will takes millions of physical-qubits for quantum-computers to break ECDLP.</h5>
+							</code>
+						</p>
+
+						<br>
+						<br>
+						<h4>3. Hash function can be broken with a well-known vulnerability:</h4>
+						<p>
+							Most existing blockchain technology is using hash function based on merkle-damgard construction, which is relies on black-box function. Quantum computers have an ability to break its black-box with well-known paralelism vulnerability.
+						</p>
+					
+						<div>
+							<p>
+							  1. Parallel Grover's search involves using multiple copies of the search oracle <code>𝑈𝑆</code> to speed up the search process.
+							</p>
+						  
+							<p>
+							  2. By running <code>𝑘</code> parallel copies of the search oracle, each indexed by <code>𝑥</code>, and starting from a specific state <code>|𝑥⟩(𝐻|0⟩)⊗(𝑛−𝑘)</code>, the time required for the search can be reduced to <code>𝑂(𝑁/𝐾‾‾√)</code>, at the cost of requiring <code>𝐾</code> times more space.
+							</p>
+						  
+							<p>
+							  3. While this parallel approach may not change the scaling behavior (as it still achieves a <code>𝐾‾‾√</code> improvement), it does change the fundamental running time and provides a benchmark for a specific value of <code>𝑁</code>.
+							</p>
+						  
+							<p>
+							  4. In terms of complexity, parallel Grover's search offers a speedup compared to non-parallel search. However, there are additional factors to consider, such as the need to verify the correct output among the parallel processes.
+							</p>
+						  
+							<p>
+							  5. The complexity of parallel Grover's search can be hidden within the <code>𝑂</code> notation, and it becomes particularly interesting when dealing with hardware limitations, such as a limited number of qubits.
+							</p>
+						  
+							<p>
+							  6. To break a hash function, the quantum oracle is created, and then parallel Grover's search is applied to find the private key. By querying the oracle with random inputs, the private key can be found with a high probability after a certain number of queries.
+							</p>
+						  
+							<p>
+							  The time complexity of finding the private key using parallel Grover's search is <code>O(√N/2)</code>, where <code>N</code> is the number of possible inputs to the hash functions. This represents a quadratic speedup compared to the best known classical algorithm, which takes <code>O(N)</code> time.
+							</p>
+						  </div>
+						  
+
+						<br>
+						<br>
+						<p>
+							<code>
+								<h5>"Important to note: While the threat of quantum computers to primitive hash function in theoretical is real, it will takes millions of physical-qubits for quantum-computers to break black-box of hash function.</h5>
+							</code>
+						</p>
+
+					</section><!--//section-->
+					
+					
+					<section class="docs-section" id="item-4-4">
+						<h2 class="section-heading">Unleashing the Power of Community and Security</h2>
+							<p>
+								Experience the transformative benefits of blockchain technology, accessible to all, regardless of technical expertise. Our mission is to provide user-friendly tools and resources that empower developers and businesses to effortlessly build and deploy applications on the blockchain
+							</p>
+
+							<p>
+								Embrace blockchain technology for a multitude of purposes, such as secure financial transactions, efficient supply chain management, and trustworthy voting systems. We achieve this by educating the public about the remarkable advantages of blockchain and collaborating with the community to drive widespread adoption.
+							</p>
+
+							<p>
+								Cultivate a vibrant community comprising developers, businesses, and users who are wholeheartedly committed to the growth and utilization of blockchain. Through forums, discussions, and collaborative initiatives, we foster an environment of innovation, enabling the creation of novel applications and services on the blockchain.
+							</p>
+
+							<p>
+								Harness the power of blockchain to create immutable records, fortifying defenses against malicious attacks aiming to tamper with or delete crucial data. For instance, blockchain can serve as an incorruptible ledger for storing voting records, ensuring the integrity of democratic processes.
+							</p>
+
+							<p>
+								By accomplishing these pivotal objectives, our open-source post-quantum blockchain layer 1 project will contribute to the establishment of a more secure and resilient digital world.
+							</p>
+
+							<p>
+								Beyond the examples mentioned above, blockchain holds the potential to enhance cybersecurity and defense in various other ways. For instance, it can:
+							</p>
+
+							<p>
+								<h5>1. Achieving Quantum Resistance:</h5> Our primary objective is to develop a blockchain infrastructure that is resistant to attacks from quantum computers. By integrating post-quantum cryptographic algorithms, we aim to ensure the long-term security and sustainability of our blockchain network.
+							</p>
+
+							<p>
+								<h5>2. Scalability Improvements:</h5> We strive to overcome the scalability challenges faced by existing blockchain networks. Through innovative architectural design and novel techniques such as sharding and off-chain computations, we aim to significantly improve the scalability of our blockchain layer 1 solution.
+							</p>
+
+							<p>
+								<h5>3. Enhanced Security:</h5> Security is of utmost importance in blockchain technology. We aim to provide enhanced security measures that protect against both traditional and quantum-based attacks. By leveraging post-quantum cryptography, advanced threat modeling, and robust key management practices, we aim to ensure the integrity and confidentiality of transactions within our blockchain.
+							</p>
+
+							<p>
+								<h5>4. Improved Performance:</h5> Alongside scalability improvements, we aim to enhance the overall performance of our blockchain network. Through optimized consensus protocols, efficient transaction models, and innovative data structures, we strive to achieve faster transaction processing times and lower latency.
+							</p>
+
+							<p>
+								<h5>5. Decentralization:</h5> We believe in the fundamental principles of decentralization. Our objective is to create a truly decentralized blockchain ecosystem, where power and decision-making are distributed among network participants. We aim to foster a community-driven approach to governance and ensure inclusivity and transparency in our project.
+							</p>
+
+							<p>
+								By achieving these objectives, we aim to revolutionize the blockchain industry and establish a quantum-resistant future for blockchain technology. Through our project, we seek to redefine the boundaries of blockchain security, scalability, and performance while maintaining the core principles of decentralization and trust.
+							</p>
+                       
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-5">
+						<h2 class="section-heading">Enabled post-quantum cryptography</h2>
+
+						<h4><strong>1. Crystals-kyber</strong></h4>
+						<p>
+							Mathematical properties of Crystals-kyber is based on lattice-problems are believed to be NP-hard, which means that they are believed to be difficult to solve even for quantum computers.
+						</p>
+							1. Lattice problems are based on number theory, which is a well-studied field of mathematics.
+						</p>
+						<p>
+							2. Lattice problems have been shown to be resistant to a variety of attacks, including classical attacks and quantum attacks.
+						</p>
+						<p>
+
+							<br>
+							<h5>Lattices:</h5>
+						</p>
+						<p>
+							A lattice in <code>ℝ<sup>n</sup></code>, denoted by <code>L</code>, is generated by <code>a</code> set of linearly independent vectors <code>𝐵 = {𝐛1, 𝐛2, ..., 𝐛m}</code>.
+						</p>
+						<p>
+							<code>L</code> consists of all integer linear combinations <code>𝐵𝑥 = ∑𝐛𝑖𝑥𝑖, where 𝑥 ∈ ℤm</code>.
+						</p>
+						<p>
+							The vectors <code>𝐛1, 𝐛2, ..., 𝐛m</code> form <code>a</code> basis for <code>L</code>.
+						</p>
+
+						<p>
+
+							<br>
+							<h5>Computational Lattice Problems:</h5>
+						</p>
+						<p>
+							Lattices allow for efficient evaluation of certain computations using linear algebra algorithms.
+						</p>
+						<p>
+							Two important problems: Basis Computation and Membership Testing.
+						</p>
+
+						<p>
+
+							<br>
+							<h5>LWE Fundamentals:</h5>
+						</p>
+						<p>
+							Linear equation system <code>A · s = b,</code> where <code>A ∈ ℤqm×n, s ∈ ℤqn,</code> and <code>b ∈ ℤqm</code>.
+						</p>
+						<p>
+							Adding error values <code>e ∈ ℤqm</code> to the equation system makes solving the system and retrieving the solution vector <code>s</code> difficult.
+						</p>
+						<p>
+							Related to difficult lattice problems.
+						</p>
+
+						<p>
+
+							<br>
+							<h5>Decisional LWE (dLWE):</h5>
+						</p>
+						<p>
+							LWE problem posed as a decision problem.
+						</p>
+						<p>
+							Given an LWE sample (<code>A, b</code>), guess if <code>b</code> has been calculated as <code>A · s + e</code> with small error values or chosen arbitrarily.
+						</p>
+
+						<p>
+
+							<br>
+							<h5>Linking LWE to Computational Lattice Problems:</h5>
+						</p>
+						<p>
+							Solving LWE can be done by solving the closest vector problem.
+						</p>
+						<p>
+							The closest vector to <code>b</code> is often the lattice vector <code>A · s</code> with distance <code>e</code>.
+						</p>
+
+						<p>
+
+							<br>
+							<h5>LWE-Based Encryption Schemes:</h5>
+						</p>
+						<p>
+							LWE instances used for designing secure encryption schemes.
+						</p>
+						<p>
+							Public and private keys enable secure communication between parties.
+						</p>
+
+						<br>
+						<br>
+						<h4><strong>2. SPHINCS+ (DSA)</strong></h4>
+						<p>
+							<p>
+								For security parameter <code>n ∈ N</code> and parameters <code>w, h, d, m, t, k</code>, SPHINCS+ is existentially unforgeable under post-quantum adaptive chosen message attacks if the following conditions are met:
+							</p>
+								
+						
+							<p>
+								1. <code>F, H,</code> and <code>T</code> are post-quantum distinct-function multi-target second-preimage resistant function families.
+							</p>
+							<p>
+								2. <code>F</code> fulfills the requirement of <code>Eqn</code>.
+							</p>
+							<p>
+								3. PRF and PRFmsg are post-quantum pseudorandom function families.
+							</p>
+							<p>
+								4. PRFBM is modeled as a quantum-accessible random oracle.
+							</p>
+							<p>
+								5. Hmsg is a post-quantum interleaved target subset resilient hash function family.
+							</p>
+								
+								
+							<p>
+								6. Insecurity function <code>InSecPQ-EU-CMA</code> SPHINCS+; <code>ξ, 2<sup>h</sup></code> is bounded by the following expression:
+							</p>
+								
+							<p>
+								<code>InSecpq-eu-cma</code> SPHINCS+; <code>ξ ≤ 2(InSecpq-prf (PRF; ξ) + InSecpq-prf (PRFmsg; ξ) + InSecpq-itsr (Hmsg; ξ) + InSecpq-dm-spr (F; ξ) + InSecpq-dm-spr (H; ξ) + InSecpq-dm-spr (T; ξ))</code>
+							</p>
+							
+							<br>
+							<p>
+								<h5>Definitions:</h5>
+							</p>
+								
+							<p>
+								Post-quantum distinct-function, multi-target second-preimage resistance (<code>pq-dm-spr</code>):
+							</p>
+								
+							<p>
+								<code>Succpq-dm-spr Hλ,p (A)</code> represents the success probability of any (quantum) adversary <code>A</code> against <code>pq-dm-spr</code>.
+								The success probability is parameterized by the number of targets.
+								It involves the selection of key sets and messages, and the adversary's ability to find a different message that has the same hash value as a target.
+							</p>
+								
+							<p>
+								(Post-quantum) interleaved target subset resilience (<code>pq-itsr</code>):
+							</p>
+								
+							<p>
+								<code>Succpq-itsr H,q (A)</code> represents the success probability of any (quantum) adversary <code>A</code> against <code>pq-itsr</code>.
+								It involves the evaluation of a mapping function and an oracle query.
+								The adversary aims to find another input that produces the same output as the oracle without the input being one of the queries.
+								It is a strengthened version of target subset resilience in the multi-target setting.
+							</p>
+
+
+							<br>
+						<br>
+						<h4><strong>3. SWIFFTX hash function</strong></h4>
+						<p>
+							<p>
+								For security parameter <code>n ∈ N</code> and parameters <code>w, h, d, m, t, k</code>, SPHINCS+ is existentially unforgeable under post-quantum adaptive chosen message attacks if the following conditions are met:
+							</p>
+								
+						
+							<p>
+								1. <code>F, H,</code> and <code>T</code> are post-quantum distinct-function multi-target second-preimage resistant function families.
+							</p>
+							<p>
+								2. <code>F</code> fulfills the requirement of <code>Eqn</code>.
+							</p>
+							<p>
+								3. PRF and PRFmsg are post-quantum pseudorandom function families.
+							</p>
+							<p>
+								4. PRFBM is modeled as a quantum-accessible random oracle.
+							</p>
+							<p>
+								5. Hmsg is a post-quantum interleaved target subset resilient hash function family.
+							</p>
+								
+								
+							<p>
+								6. Insecurity function <code>InSecPQ-EU-CMA</code> SPHINCS+; <code>ξ, 2<sup>h</sup></code> is bounded by the following expression:
+							</p>
+								
+							<p>
+								<code>InSecpq-eu-cma</code> SPHINCS+; <code>ξ ≤ 2(InSecpq-prf (PRF; ξ) + InSecpq-prf (PRFmsg; ξ) + InSecpq-itsr (Hmsg; ξ) + InSecpq-dm-spr (F; ξ) + InSecpq-dm-spr (H; ξ) + InSecpq-dm-spr (T; ξ))</code>
+							</p>
+							
+							<br>
+							<p>
+								<h5>Definitions:</h5>
+							</p>
+								
+							<p>
+								Post-quantum distinct-function, multi-target second-preimage resistance (<code>pq-dm-spr</code>):
+							</p>
+								
+							<p>
+								<code>Succpq-dm-spr Hλ,p (A)</code> represents the success probability of any (quantum) adversary <code>A</code> against <code>pq-dm-spr</code>.
+								The success probability is parameterized by the number of targets.
+								It involves the selection of key sets and messages, and the adversary's ability to find a different message that has the same hash value as a target.
+							</p>
+								
+							<p>
+								(Post-quantum) interleaved target subset resilience (<code>pq-itsr</code>):
+							</p>
+								
+							<p>
+								<code>Succpq-itsr H,q (A)</code> represents the success probability of any (quantum) adversary <code>A</code> against <code>pq-itsr</code>.
+								It involves the evaluation of a mapping function and an oracle query.
+								The adversary aims to find another input that produces the same output as the oracle without the input being one of the queries.
+								It is a strengthened version of target subset resilience in the multi-target setting.
+							</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-6">
+						<h5>PQC Frameworks</h5>
+						<div class="docs-code-block">
+							<script src="https://gist.github.com/ChyKusuma/6fb52b79530e9018441f8f96272962e4.js"></script>
+							<!-- ** Embed github code ends ** -->
+						</div><!--//docs-code-block-->
+						<br>
+						<br>
+                        <h5>Progress Examples:</h5>
+                        <div class="my-4">
+	                        <div class="progress my-4">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="progress my-4">
+							    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="progress my-4">
+							    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="progress my-4">
+							    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+                        </div>
+					</section><!--//section-->
+			    
+			    <article class="docs-article" id="section-5">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">PQC implementation</h1>
+					    <section class="docs-intro">
+							<p>
+								In the ever-evolving landscape of technology, quantum computing represents a significant leap forward. With the promise of immense computational power, quantum computers have the potential to disrupt traditional cryptographic systems, posing a significant threat to the security of current blockchain infrastructures. As we identify the vulnerabilities of existing cryptographic algorithms, it becomes crucial to explore and implement post-quantum cryptography (PQC) as a solution to ensure the long-term security and integrity of blockchain networks.
+							</p>
+						
+						</section><!--//docs-intro-->
+						
+				    </header>
+				    <section class="docs-section" id="item-5-1">
+						<h2 class="section-heading">The urgency of PQC:</h2>
+						<h5 class="mt-5">NSA sets 2035 deadline for adoption of PQC</h5>
+						<p>
+							<i class="fas fa-external-link-alt"></i> <a class="docs-theme-link" href="https://www.nsa.gov/Press-Room/News-Highlights/Article/Article/3148990/nsa-releases-future-quantum-resistant-qr-algorithm-requirements-for-national-se/" target="_blank">Advisory note</a>
+						</p>
+
+						<br>
+						<h5>The Problem with Current Blockchain Security:</h5>
+							<p>
+								Blockchain technology has revolutionized various industries, providing decentralized and transparent systems. Central to its security is the cryptographic algorithms that protect sensitive information, secure transactions, and maintain the immutability of the blockchain ledger. However, traditional cryptographic algorithms, such as ECC(DSA), SHA family based on Merkle-Damgård and Keccak construction, are at risk of being broken by powerful quantum computers in the future. It will impacted to everything that running or build in the top of its blockchain.
+							</p>
+
+							<p>
+								Quantum computers have the ability to exploit the weaknesses in these algorithms, rendering the security of blockchain networks compromised. This threat extends not only to financial transactions but also to sensitive data stored on the blockchain, including personal information, supply chain details, and healthcare records. The urgency to address this issue becomes apparent as we witness the rapid advancements in quantum computing technology.
+							</p>
+
+							<br>
+							<h5>The Solution: Post-Quantum Cryptography (PQC):</h5>
+							<p>
+								Post-quantum cryptography offers a promising solution to the imminent threat posed by quantum computers. PQC involves the development and implementation of new cryptographic algorithms that are resistant to attacks from both classical and quantum computers. These algorithms are designed to withstand the computational power of quantum computers, ensuring the continued security and privacy of blockchain networks.
+							</p>
+
+							<br>
+							<h5>Implementing PQC in Blockchain:</h5>
+							<p>
+								The implementation of PQC in blockchain systems requires a collaborative effort between researchers, developers, and blockchain projects. The transition to post-quantum cryptography involves careful planning and consideration to ensure compatibility, efficiency, and security.
+							</p>
+
+							<p>
+								One of the key challenges in adopting PQC is the need for consensus among blockchain stakeholders. The migration to new cryptographic algorithms requires coordination and agreement across the entire network to avoid fragmentation and potential security gaps. Additionally, blockchain projects must consider the performance implications of implementing PQC, as some post-quantum algorithms may introduce increased computational overhead.
+							</p>
+
+							<p>
+								Collaborative research and development efforts are already underway, exploring various post-quantum cryptographic algorithms suitable for blockchain applications. These include lattice-based, code-based, multivariate, and hash-based algorithms, among others. The goal is to identify algorithms that provide a balance between security, efficiency, and scalability, ensuring a seamless transition to post-quantum cryptography.
+							</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-2">
+						<h2 class="section-heading">1. Crystals-kyber implementation</h2>
+						
+						<h5>Kyber Specifications:</h5>
+						<div class="table-responsive my-4">
+							<table class="table table-bordered table-dark">
+								<thead>
+									<tr>
+										<th scope="col">Type</th>
+										<th scope="col">Public key size (B)</th>
+										<th scope="col">Secret key size (B)</th>
+										<th scope="col">Ciphertext size (B)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Kyber-512</td>
+										<td>800</td>
+										<td>1,632</td>
+										<td>768</td>
+									</tr>
+									<tr>
+										<td>Kyber-768</td>
+										<td>1,184</td>
+										<td>2,400</td>
+										<td>1,088</td>
+									</tr>
+									<tr>
+										<td>Kyber-1024</td>
+										<td>1,568</td>
+										<td>3,168</td>
+										<td>1,568</td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!--//table responsive-->
+
+						<h5>Find out:</h5>
+						<div class="row my-3">
+                        <div class="col-md-6 col-12">
+							<ul class="list list-unstyled pl-0">
+								<li><a href="https://forms.gle/YhuVTSjUkY6AT8HM6" class="btn btn-success" target="_blank"><i class="fas fa-code-branch me-2"></i> Contribute</a></li>
+							</ul>
+                            </div>
+                        </div><!--//row-->
+
+						<h5>Authors:</h5>
+						<p>
+							<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://github.com/cahyaksm" target="_blank">C. Kusuma</a>
+						</p>
+                        
+						<br>
+                        <h5>Progress:</h5>
+                        <div class="my-4">
+	                        <div class="progress my-4">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+                        </div>
+
+						<h5>Callout:</h5>
+							<div class="callout-block callout-block-warning">
+								
+								<div class="content">
+									<h4 class="callout-title">
+										<span class="callout-icon-holder me-1">
+											<i class="fas fa-bullhorn"></i>
+										</span><!--//icon-holder-->
+										Warning
+									</h4>
+									<p>
+										Use for minimum Kyber-768 and we can combine with AES256 or CurveX25519/ 448 to hybrid encryption approach and achieve two underlying problem.
+									</p>
+								</div>
+							</div>
+
+						<br>
+						<br>
+						<h2 class="section-heading">2. SPHINCS+ (DSA) implementation</h2>
+						<p>
+							SPHINCS+-SHA256f (Robust) will responsible for <code>sign, verify, hash</code>
+						</p>
+
+						<h5>Sphincs+ Specifications:</h5>
+						<div class="table-responsive my-4">
+							<table class="table table-bordered table-dark">
+								<thead>
+									<tr>
+										<th scope="col">Method</th>
+										<th scope="col">Public key size</th>
+										<th scope="col">Private key size</th>
+										<th scope="col">Signature size</th>
+										<th scope="col">Security level</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>SPHINCS+ SHA-256 128-bit</td>
+										<td>32</td>
+										<td>64</td>
+										<td>17,088</td>
+										<td>1 (128-bit)</td>
+									</tr>
+									<tr>
+										<td>SPHINCS+ SHA-256 192-bit</td>
+										<td>48</td>
+										<td>96</td>
+										<td>35,664</td>
+										<td>3 (192-bit)</td>
+									</tr>
+									<tr>
+										<td>SPHINCS+ SHA-256 256-bit</td>
+										<td>64</td>
+										<td>128</td>
+										<td>49,856</td>
+										<td>5 (256-bit)</td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!--//table responsive-->
+						
+						  <h5>Find out:</h5>
+						  <div class="row my-3">
+						  <div class="col-md-6 col-12">
+							  <ul class="list list-unstyled pl-0">
+								  <li><a href="https://forms.gle/YhuVTSjUkY6AT8HM6" class="btn btn-success" target="_blank"><i class="fas fa-code-branch me-2"></i> Contribute</a></li>
+							  </ul>
+							  </div>
+						  </div><!--//row-->
+                        
+						  <h5>Authors:</h5>
+						<p>
+							<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://github.com/cahyaksm" target="_blank">C. Kusuma</a>
+						</p>
+
+						<br>
+                        <h5>Progress:</h5>
+                        <div class="my-4">
+	                        <div class="progress my-4">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+                        </div>
+						<br>
+						<h5>Callout:</h5>
+							<div class="callout-block callout-block-warning">
+								
+								<div class="content">
+									<h4 class="callout-title">
+										<span class="callout-icon-holder me-1">
+											<i class="fas fa-bullhorn"></i>
+										</span><!--//icon-holder-->
+										Warning
+									</h4>
+									<p>
+										Replace the default SPHINCS+ hash function (SHA2-256f) to using SHA3/SWIFFTX hash function, or compress the default hash function (SHA2-256f) into final SHA3/SWIFFTX hash function.
+									</p>
+								</div>
+							</div>
+
+						<br>
+						<br>
+						<h2 class="section-heading">3. SHA3/SWIFFTX hash implementation</h2>
+						<p>
+							An efficient lattice-based cryptographic hash function that responsible to <code>main hash</code> function.
+						</p>
+
+						<div class="table-responsive my-4">
+							<table class="table table-bordered table-dark">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Hash Function</th>
+										<th scope="col">Output Size</th>
+										<th scope="col">Construction</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>SHA3/SWIFFTX</td>
+										<td>256 bits</td>
+										<td>SHA3/SWIFFTX is a family of SHA3 based on homomorphic<br>hash functions provided as part of a candidate submission<br>to the NIST hash function competition in 2008 by Vadim Lyubashevsky,<br>Daniele Micciancio, Chris Peikert, and Alon Rosen.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--//table-responsive-->
+						
+						  <h5>Find out:</h5>
+						  <div class="row my-3">
+						  <div class="col-md-6 col-12">
+							  <ul class="list list-unstyled pl-0">
+								  <li><a href="https://forms.gle/YhuVTSjUkY6AT8HM6" class="btn btn-success" target="_blank"><i class="fas fa-code-branch me-2"></i> Contribute</a></li>
+							  </ul>
+							  </div>
+						  </div><!--//row-->
+
+						  <h5>Authors:</h5>
+						<p>
+							<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://github.com/cahyaksm" target="_blank">C. Kusuma</a>
+						</p>
+
+						<br>
+                        <h5>Progress:</h5>
+                        <div class="my-4">
+	                        <div class="progress my-4">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+                        </div>
+
+						<br>
+						<br>
+						<h2 class="section-heading">4. Base58 implementation</h2>
+						<p>
+							Inspired by Bitcoin to created human readability address we using base58check to encode.
+						</p>
+
+						<h5>Base58:</h5>
+										<div class="docs-code-block">
+											<script src="https://gist.github.com/cahyaksm/873f76c290480f35a78d15a5a4a4e6f0.js"></script>
+											<!-- ** Embed github code ends ** -->
+										</div><!--//docs-code-block-->
+									<br>
+						
+						  <h5>Find out:</h5>
+						  <div class="row my-3">
+						  <div class="col-md-6 col-12">
+							  <ul class="list list-unstyled pl-0">
+								  <li><a href="https://forms.gle/YhuVTSjUkY6AT8HM6" class="btn btn-success" target="_blank"><i class="fas fa-code-branch me-2"></i> Contribute</a></li>
+							  </ul>
+							  </div>
+						  </div><!--//row-->
+
+						  <h5>Authors:</h5>
+						<p>
+							<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://github.com/cahyaksm" target="_blank">C. Kusuma</a>
+						</p>
+
+						<br>
+                        <h5>Progress:</h5>
+                        <div class="my-4">
+	                        <div class="progress my-4">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+                        </div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-4">
+						<h2 class="section-heading">5. Multi-party signature implementation</h2>
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, itaque hic, magni illo esse maxime pariatur perferendis ullam quo sed necessitatibus quae voluptatum, illum debitis minus ut explicabo reprehenderit. Quidem?
+						</p>
+						
+						  <h5>Find out:</h5>
+						  <div class="row my-3">
+						  <div class="col-md-6 col-12">
+							  <ul class="list list-unstyled pl-0">
+								  <li><a href="https://forms.gle/YhuVTSjUkY6AT8HM6" class="btn btn-success" target="_blank"><i class="fas fa-code-branch me-2"></i> Contribute</a></li>
+							  </ul>
+							  </div>
+						  </div><!--//row-->
+						  <h5>Authors:</h5>
+						<p>
+							<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://github.com/cahyaksm" target="_blank">C. Kusuma</a>
+						</p>
+
+						<br>
+                        <h5>Progress:</h5>
+                        <div class="my-4">
+	                        <div class="progress my-4">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+                        </div>
+
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-5">
+						<h2 class="section-heading">6. Crosschain implementation</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque optio tempora amet, laudantium exercitationem obcaecati dolorum modi debitis voluptatum, iusto voluptatibus eveniet quae nostrum deserunt? Numquam quae molestias dolor cum.
+						</p>
+						<h5>Find out:</h5>
+						  <div class="row my-3">
+						  <div class="col-md-6 col-12">
+							  <ul class="list list-unstyled pl-0">
+								  <li><a href="https://forms.gle/YhuVTSjUkY6AT8HM6" class="btn btn-success" target="_blank"><i class="fas fa-code-branch me-2"></i> Contribute</a></li>
+							  </ul>
+							  </div>
+						  </div><!--//row-->
+
+						  <h5>Authors:</h5>
+						<p>
+							<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://github.com/cahyaksm" target="_blank">C. Kusuma</a>
+						</p>
+
+						<br>
+                        <h5>Progress:</h5>
+                        <div class="my-4">
+	                        <div class="progress my-4">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+                        </div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-6">
+						<h2 class="section-heading">7. Proof-of-Stake implementation</h2>
+						<p>
+							Implement proof-of-stake to be part of multi-party signature and validated the rest operation.
+						</p>
+						<h5>Find out:</h5>
+						  <div class="row my-3">
+						  <div class="col-md-6 col-12">
+							  <ul class="list list-unstyled pl-0">
+								  <li><a href="https://forms.gle/YhuVTSjUkY6AT8HM6" class="btn btn-success" target="_blank"><i class="fas fa-code-branch me-2"></i> Contribute</a></li>
+							  </ul>
+							  </div>
+						  </div><!--//row-->
+
+						  <h5>Authors:</h5>
+						<p>
+							<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://github.com/cahyaksm" target="_blank">C. Kusuma</a>
+						</p>
+
+						<br>
+                        <h5>Progress:</h5>
+                        <div class="my-4">
+	                        <div class="progress my-4">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+                        </div>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-5-7">
+						<h2 class="section-heading">8. Proof-of-Work implementation</h2>
+						<p>
+							Implement proof-of-work to mining coin and block validation.
+						</p>
+						<h5>Find out:</h5>
+						  <div class="row my-3">
+						  <div class="col-md-6 col-12">
+							  <ul class="list list-unstyled pl-0">
+								  <li><a href="https://forms.gle/YhuVTSjUkY6AT8HM6" class="btn btn-success" target="_blank"><i class="fas fa-code-branch me-2"></i> Contribute</a></li>
+							  </ul>
+							  </div>
+						  </div><!--//row-->
+
+						  <h5>Authors:</h5>
+						<p>
+							<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://github.com/cahyaksm" target="_blank">C. Kusuma</a>
+						</p>
+
+						<br>
+                        <h5>Progress:</h5>
+                        <div class="my-4">
+	                        <div class="progress my-4">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+                        </div>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-5-8">
+						<h2 class="section-heading">9. Smartcontract implementation</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam quam perspiciatis sunt, facere repellat numquam molestiae cupiditate id itaque non fuga voluptates, officiis eius mollitia ad ut nulla eveniet.
+						</p>
+						<h5>Find out:</h5>
+						  <div class="row my-3">
+						  <div class="col-md-6 col-12">
+							  <ul class="list list-unstyled pl-0">
+								  <li><a href="https://forms.gle/YhuVTSjUkY6AT8HM6" class="btn btn-success" target="_blank"><i class="fas fa-code-branch me-2"></i> Contribute</a></li>
+							  </ul>
+							  </div>
+						  </div><!--//row-->
+
+						  <h5>Authors:</h5>
+						<p>
+							<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://github.com/cahyaksm" target="_blank">C. Kusuma</a>
+						</p>
+
+						<br>
+                        <h5>Progress:</h5>
+                        <div class="my-4">
+	                        <div class="progress my-4">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+                        </div>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-5-9">
+						<h2 class="section-heading">10. Smartcontract interface implementation</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam quam perspiciatis sunt, facere repellat numquam molestiae cupiditate id itaque non fuga voluptates, officiis eius mollitia ad ut nulla eveniet.
+						</p>
+						<h5>Find out:</h5>
+						  <div class="row my-3">
+						  <div class="col-md-6 col-12">
+							  <ul class="list list-unstyled pl-0">
+								  <li><a href="https://forms.gle/YhuVTSjUkY6AT8HM6" class="btn btn-success" target="_blank"><i class="fas fa-code-branch me-2"></i> Contribute</a></li>
+							  </ul>
+							  </div>
+						  </div><!--//row-->
+	
+						  <h5>Authors:</h5>
+						<p>
+							<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://github.com/cahyaksm" target="_blank">C. Kusuma</a>
+						</p>
+	
+						<br>
+						<h5>Progress:</h5>
+						<div class="my-4">
+							<div class="progress my-4">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</section><!--//section-->
+	
+	
+					<section class="docs-section" id="item-5-10">
+						<h2 class="section-heading">11. Build in zero-knowledge implementation</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam quam perspiciatis sunt, facere repellat numquam molestiae cupiditate id itaque non fuga voluptates, officiis eius mollitia ad ut nulla eveniet.
+						</p>
+						<h5>Find out:</h5>
+						<div class="row my-3">
+						<div class="col-md-6 col-12">
+							<ul class="list list-unstyled pl-0">
+								<li><a href="https://forms.gle/YhuVTSjUkY6AT8HM6" class="btn btn-success" target="_blank"><i class="fas fa-code-branch me-2"></i> Contribute</a></li>
+							</ul>
+							</div>
+						</div><!--//row-->
+		
+						<h5>Authors:</h5>
+						<p>
+							<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://github.com/cahyaksm" target="_blank">C. Kusuma</a>
+						</p>
+		
+						<br>
+						<h5>Progress:</h5>
+						<div class="my-4">
+							<div class="progress my-4">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-5-11">
+						<h2 class="section-heading">12. Testnetnet</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam quam perspiciatis sunt, facere repellat numquam molestiae cupiditate id itaque non fuga voluptates, officiis eius mollitia ad ut nulla eveniet.
+						</p>
+						<h5>Find out:</h5>
+						<div class="row my-3">
+						<div class="col-md-6 col-12">
+							<ul class="list list-unstyled pl-0">
+								<li><a href="https://forms.gle/YhuVTSjUkY6AT8HM6" class="btn btn-success" target="_blank"><i class="fas fa-code-branch me-2"></i> Contribute</a></li>
+							</ul>
+							</div>
+						</div><!--//row-->
+		
+						<h5>Authors:</h5>
+						<p>
+							<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://github.com/cahyaksm" target="_blank">C. Kusuma</a>
+						</p>
+		
+						<br>
+						<h5>Progress:</h5>
+						<div class="my-4">
+							<div class="progress my-4">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-5-12">
+						<h2 class="section-heading">13. Mainnet</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam quam perspiciatis sunt, facere repellat numquam molestiae cupiditate id itaque non fuga voluptates, officiis eius mollitia ad ut nulla eveniet.
+						</p>
+						<h5>Find out:</h5>
+						<div class="row my-3">
+						<div class="col-md-6 col-12">
+							<ul class="list list-unstyled pl-0">
+								<li><a href="https://forms.gle/YhuVTSjUkY6AT8HM6" class="btn btn-success" target="_blank"><i class="fas fa-code-branch me-2"></i> Contribute</a></li>
+							</ul>
+							</div>
+						</div><!--//row-->
+		
+						<h5>Authors:</h5>
+						<p>
+							<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://github.com/cahyaksm" target="_blank">C. Kusuma</a>
+						</p>
+		
+						<br>
+						<h5>Progress:</h5>
+						<div class="my-4">
+							<div class="progress my-4">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-5-13">
+						<h2 class="section-heading">14. Layer 2 solution</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam quam perspiciatis sunt, facere repellat numquam molestiae cupiditate id itaque non fuga voluptates, officiis eius mollitia ad ut nulla eveniet.
+						</p>
+						<h5>Find out:</h5>
+						<div class="row my-3">
+						<div class="col-md-6 col-12">
+							<ul class="list list-unstyled pl-0">
+								<li><a href="https://forms.gle/YhuVTSjUkY6AT8HM6" class="btn btn-success" target="_blank"><i class="fas fa-code-branch me-2"></i> Contribute</a></li>
+							</ul>
+							</div>
+						</div><!--//row-->
+		
+						<h5>Authors:</h5>
+						<p>
+							<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://github.com/cahyaksm" target="_blank">C. Kusuma</a>
+						</p>
+		
+						<br>
+						<h5>Progress:</h5>
+						<div class="my-4">
+							<div class="progress my-4">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</section><!--//section-->
+
+			    </article><!--//article-->
+
+
+			    
+			    <article class="docs-article" id="section-7">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Founders vision</h1>
+					    <section class="docs-intro">
+						    <p>
+								As concerned members of a community deeply invested in the rapid advancement of quantum computing, we have devoted ourselves to making a meaningful contribution by developing post-quantum security solutions for the global community. Our vision is to safeguard the world against potential threats posed by the progress of quantum computers.
+							</p>
+						</section><!--//docs-intro-->
+
+				    </header>
+				    <section class="docs-section" id="item-7-1">
+						<h2 class="mt-5">Founders and Inventors:</h2>
+						<br>
+						<h5>1. C. Kusuma</h5>
+						<br>
+						<h6>About me:</h6>
+						<p>
+							I am not an engineer, i am not a cryptographer, i am not a mathematician, I just people that care to community. I love to do research, i love to problem solving, i love to learn.
+						</p>
+						<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://linktr.ee/c.kusuma" target="_blank">C kusuma</a>. </p>
+						
+                        <br>
+						<h5>2. Your name:</h5>
+						<br>
+						<h6>About me:</h6>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa iste nemo nisi, numquam cum reprehenderit, libero qui, atque similique autem deleniti aliquid. Provident quam, facere et aperiam ipsum repellat iste!
+						</p>
+						<i class="fas fa-at"></i> <a class="docs-theme-link" href="#" target="_blank">Your name</a>. </p>
+                       
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-7-2">
+						<h2 class="section-heading">Inventors</h2>
+						<br>
+						<h5>1. Your name</h5>
+						<br>
+						<h6>About me:</h6>
+						<p>
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe atque, provident possimus inventore praesentium, commodi quasi voluptatum rerum alias fugiat vel facilis quo dignissimos, ipsa cumque ex corporis cupiditate vitae?
+						</p>
+						<i class="fas fa-at"></i> <a class="docs-theme-link" href="#" target="_blank">Yourname</a>. </p>
+						
+                        <br>
+						<h5>2. Your name:</h5>
+						<br>
+						<h6>About me:</h6>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa iste nemo nisi, numquam cum reprehenderit, libero qui, atque similique autem deleniti aliquid. Provident quam, facere et aperiam ipsum repellat iste!
+						</p>
+						<i class="fas fa-at"></i> <a class="docs-theme-link" href="#" target="_blank">Your name</a>. </p>
+                       
+					</section><!--//section-->
+						
+					
+					
+					<section class="docs-section" id="item-7-3">
+						<h2 class="section-heading">Contributors</h2>
+						<br>
+						<h5>1. Your name</h5>
+						<br>
+						<h6>About me:</h6>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint minima nobis molestias consequuntur cumque fugiat ea rerum, doloribus a dicta reiciendis, odit eaque eligendi illum pariatur dignissimos? Accusantium, est vero.
+						</p>
+						<i class="fas fa-at"></i> <a class="docs-theme-link" href="#" target="_blank">Your name</a>. </p>
+						
+                        <br>
+						<h5>2. Your name:</h5>
+						<br>
+						<h6>About me:</h6>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa iste nemo nisi, numquam cum reprehenderit, libero qui, atque similique autem deleniti aliquid. Provident quam, facere et aperiam ipsum repellat iste!
+						</p>
+						<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://id.wikipedia.org/wiki/SHA-2" target="_blank">Your name</a>. </p>
+                       
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-7-4">
+						<h2 class="section-heading">Funding Partners</h2>
+							<br>
+							<h5>1. Your name</h5>
+							<br>
+							<h6>About me:</h6>
+							<p>
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe atque, provident possimus inventore praesentium, commodi quasi voluptatum rerum alias fugiat vel facilis quo dignissimos, ipsa cumque ex corporis cupiditate vitae?
+							</p>
+							<i class="fas fa-at"></i> <a class="docs-theme-link" href="#" target="_blank">Yourname</a>. </p>
+							
+							<br>
+							<h5>2. Your name:</h5>
+							<br>
+							<h6>About me:</h6>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa iste nemo nisi, numquam cum reprehenderit, libero qui, atque similique autem deleniti aliquid. Provident quam, facere et aperiam ipsum repellat iste!
+							</p>
+							<i class="fas fa-at"></i> <a class="docs-theme-link" href="#" target="_blank">Your name</a>. </p>
+						   
+						</section><!--//section-->
+			    </article>
+			    
+			    
+			    <article class="docs-article" id="section-9">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">FAQs</h1>
+					    <section class="docs-intro">
+						    <p>
+								Quantum computers have the ability to exploit the weaknesses in these algorithms, rendering the security of blockchain networks compromised. This threat extends not only to financial transactions but also to sensitive data stored on the blockchain, including personal information, supply chain details, and healthcare records. The urgency to address this issue becomes apparent as we witness the rapid advancements in quantum computing technology.
+							</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-9-1">
+						<h2 class="section-heading">Post-Quantum Blockchain Layer 1
+						</h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What is a post-quantum blockchain layer 1?</h5>
+						<p>
+							A post-quantum blockchain layer 1 is a decentralized, secure, and scalable blockchain protocol that incorporates post-quantum cryptographic algorithms to safeguard against future quantum attacks.
+						</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Why is post-quantum cryptography important for blockchain?</h5>
+						<p>
+							Post-quantum cryptography is crucial for blockchain because traditional cryptographic algorithms are vulnerable to attacks by quantum computers. By using post-quantum cryptographic algorithms, our layer 1 protocol ensures long-term security and protects user assets.
+						</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How does our layer 1 protocol address post-quantum security concerns?</h5>
+						<p>
+							Our layer 1 protocol utilizes state-of-the-art post-quantum cryptographic algorithms, such as lattice-based or code-based cryptography, which are resistant to quantum attacks. These algorithms provide robust security and ensure the confidentiality and integrity of transactions and user data.
+						</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What are the advantages of using our open-source solution?</h5>
+						<p>
+							Our open-source solution allows for transparency and community 		collaboration, fostering innovation and improvement. It empowers developers to audit and contribute to the protocol, resulting in a more secure and reliable post-quantum blockchain layer 1. Additionally, an open-source approach promotes widespread adoption and trust within the community.
+						</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-9-2">
+						<h2 class="section-heading">Technical Details</h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What is the consensus mechanism used in our layer 1 protocol?</h5>
+						<p>
+							Our layer 1 protocol uses a consensus mechanism based on [Insert consensus mechanism name], which ensures agreement and finality of transactions across the network.
+						</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How does our protocol handle scalability and transaction throughput?</h5>
+						<p>
+							Our protocol incorporates [Insert scalability solution, such as sharding or layer 2 solutions] to enhance scalability and increase transaction throughput. By dividing the network into smaller partitions, our protocol can process a higher number of transactions in parallel.
+						</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can you explain the post-quantum cryptographic algorithms used in our blockchain?</h5>
+						<p>
+							Our blockchain utilizes [Insert specific post-quantum cryptographic algorithm names], which are designed to resist attacks from both classical and quantum computers. These algorithms provide secure key exchange, digital signatures, and encryption mechanisms.
+						</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How do nodes participate in the network and validate transactions?</h5>
+						<p>
+							Nodes in our network participate by running the layer 1 protocol software, which allows them to validate transactions, reach consensus, and secure the network. Nodes perform tasks such as transaction verification, block creation, and maintaining a synchronized blockchain ledger.
+						</p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Is our protocol interoperable with existing blockchain networks?</h5>
+						<p>
+							Yes, our protocol is designed to be interoperable with existing blockchain networks, allowing for seamless integration and collaboration between different blockchain ecosystems. This interoperability facilitates the exchange of assets, data, and smart contracts across multiple networks.
+						</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-9-3">
+							<h2 class="section-heading">Implementation and Community</h2>
+						    <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Is the codebase of our layer 1 protocol open-source?</h5>
+							<p>
+								Yes, the codebase of our layer 1 protocol is fully open-source. This means that anyone can access, review, and contribute to the code, ensuring transparency and encouraging community involvement.
+							</p>
+							<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How can developers contribute to the project?</h5>
+							<p>
+								Developers can contribute to the project by participating in the GitHub repository, submitting bug reports, proposing enhancements, and creating pull requests. Additionally, community discussions and forums provide a platform for sharing ideas and collaborating with other developers.
+							</p>
+							<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What resources are available for developers to learn and build on our protocol?</h5>
+							<p>
+								We provide comprehensive documentation, including developer guides, API references, and tutorials, to help developers understand and utilize our protocol effectively. Additionally, developer communities, online forums, and dedicated support channels offer assistance and foster knowledge sharing among developers.
+							</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+
+			    <footer class="footer">
+
+					<div class="footer-bottom text-center py-5">
+						
+						<ul class="social-list list-unstyled pt-4 mb-0">
+							<li class="list-inline-item"><a href="https://github.com/SPHINX-HUB-ORG" target="_blank"><i class="fab fa-github fa-fw"></i></a></li> 
+							<li class="list-inline-item"><a href="https://twitter.com/sphinx_org" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://discord.gg/xBuu8wbu" target="_blank"><i class="fab fa-discord fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://t.me/https://t.me/SPHINX_Network" target="_blank"><i class="fab fa-telegram fa-fw"></i></a></li>
+						</ul>
+						<!--//social-list-->
+						
+			
+						<small class="copyright">© 2023 SPHINX foundation. All rights reserved</span>
+							<span><a class="theme-link" href=" " target="_blank">Privacy</a></span>
+							<span><a class="theme-link" href=" " target="_blank">Policy</a></span></small>
+						
+					</div>
+					
+				</footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+		  const logoLink = document.getElementById("logo-link");
+		  logoLink.addEventListener("click", function() {
+			window.location.href = "/"; // Change this to the correct homepage URL
+		  });
+		});
+		</script>			
+    
+    
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+
+</body>
+</html> 
+
+

@@ -1,0 +1,5 @@
+/// <reference types="react" />
+export declare const FloatingToolbarWrapper: ({ children, position, }: {
+    children: JSX.Element;
+    position?: 'top' | 'bottom';
+}) => JSX.Element;

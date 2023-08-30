@@ -1,0 +1,1 @@
+{"version":3,"file":"sanitizeUrl.d.ts","sourceRoot":"","sources":["../src/sanitizeUrl.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,kBAAkB;IACjC,cAAc,CAAC,EAAE,MAAM,EAAE,CAAC;IAC1B,aAAa,CAAC,EAAE,OAAO,CAAC;CACzB;AAED,eAAO,MAAM,WAAW,QACjB,MAAM,GAAG,SAAS,qCACoB,kBAAkB,KAC5D,MAAM,GAAG,IAmBX,CAAC"}

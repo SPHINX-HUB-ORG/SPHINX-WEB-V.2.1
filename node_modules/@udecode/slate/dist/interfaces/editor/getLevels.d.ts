@@ -1,0 +1,13 @@
+import { Modify } from '@udecode/utils';
+import { EditorLevelsOptions } from 'slate';
+import { ENode, TNode, TNodeMatch } from '../node/TNode';
+import { TNodeEntry } from '../node/TNodeEntry';
+import { TEditor, Value } from './TEditor';
+export declare type GetLevelsOptions<V extends Value = Value> = Modify<NonNullable<EditorLevelsOptions<TNode>>, {
+    match?: TNodeMatch<ENode<V>>;
+}>;
+/**
+ * Iterate through all of the levels at a location.
+ */
+export declare const getLevels: <N extends ENode<V>, V extends Value = Value>(editor: TEditor<V>, options?: GetLevelsOptions<V> | undefined) => Generator<TNodeEntry<N>, void, undefined>;
+//# sourceMappingURL=getLevels.d.ts.map

@@ -1,0 +1,3 @@
+/// <reference types="react" />
+export declare const LocalWarning: () => JSX.Element;
+export declare const BillingWarning: () => JSX.Element;

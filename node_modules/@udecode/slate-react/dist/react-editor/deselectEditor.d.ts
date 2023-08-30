@@ -1,0 +1,7 @@
+import { Value } from '@udecode/slate';
+import { TReactEditor } from '../types/TReactEditor';
+/**
+ * Deselect the editor.
+ */
+export declare const deselectEditor: <V extends Value>(editor: TReactEditor<V>) => void;
+//# sourceMappingURL=deselectEditor.d.ts.map

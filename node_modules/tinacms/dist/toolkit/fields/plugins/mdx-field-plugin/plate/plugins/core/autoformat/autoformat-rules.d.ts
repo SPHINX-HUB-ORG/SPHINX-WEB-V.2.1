@@ -1,0 +1,1 @@
+export declare const autoformatRules: import("@udecode/plate-headless").AutoformatRule<import("@udecode/plate-headless").Value, import("@udecode/plate-headless").PlateEditor<import("@udecode/plate-headless").Value>>[];

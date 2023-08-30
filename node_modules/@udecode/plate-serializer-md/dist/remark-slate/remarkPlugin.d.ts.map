@@ -1,0 +1,1 @@
+{"version":3,"file":"remarkPlugin.d.ts","sourceRoot":"","sources":["../../src/remark-slate/remarkPlugin.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,uBAAuB,CAAC;AAE9C,OAAO,EAAa,mBAAmB,EAAE,MAAM,SAAS,CAAC;AAEzD,wBAAgB,YAAY,CAAC,CAAC,SAAS,KAAK,EAAE,OAAO,EAAE,mBAAmB,CAAC,CAAC,CAAC,QAS5E"}

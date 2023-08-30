@@ -1,0 +1,7 @@
+import { TNode, Value } from '@udecode/slate';
+import { TReactEditor } from '../types/TReactEditor';
+/**
+ * Find the native DOM element from a Slate node.
+ */
+export declare const toDOMNode: <V extends Value>(editor: TReactEditor<V>, node: TNode) => HTMLElement | undefined;
+//# sourceMappingURL=toDOMNode.d.ts.map

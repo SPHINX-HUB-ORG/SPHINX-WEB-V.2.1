@@ -1,0 +1,9 @@
+import type { Field } from '../../../../forms';
+export declare type MdxTemplate = {
+    label: string;
+    key: string;
+    inline?: boolean;
+    name: string;
+    defaultItem?: {};
+    fields: Field[];
+};

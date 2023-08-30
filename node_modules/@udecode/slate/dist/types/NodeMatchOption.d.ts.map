@@ -1,0 +1,1 @@
+{"version":3,"file":"NodeMatchOption.d.ts","sourceRoot":"","sources":["../../src/types/NodeMatchOption.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,8BAA8B,CAAC;AACrD,OAAO,EAAE,KAAK,EAAE,UAAU,EAAE,MAAM,0BAA0B,CAAC;AAE7D,MAAM,WAAW,eAAe,CAAC,CAAC,SAAS,KAAK;IAC9C,KAAK,CAAC,EAAE,UAAU,CAAC,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC;CAC9B"}

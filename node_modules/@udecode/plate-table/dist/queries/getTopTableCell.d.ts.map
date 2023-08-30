@@ -1,0 +1,1 @@
+{"version":3,"file":"getTopTableCell.d.ts","sourceRoot":"","sources":["../../src/queries/getTopTableCell.ts"],"names":[],"mappings":"AAAA,OAAO,EAGL,WAAW,EACX,KAAK,EACN,MAAM,uBAAuB,CAAC;AAC/B,OAAO,EAAE,IAAI,EAAE,MAAM,OAAO,CAAC;AAC7B,OAAO,EAAE,iBAAiB,EAAE,MAAM,UAAU,CAAC;AAI7C,eAAO,MAAM,eAAe,gEAIvB;IACD,EAAE,CAAC,EAAE,IAAI,CAAC;CACX,8EAuBF,CAAC"}

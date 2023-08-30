@@ -1,0 +1,3 @@
+import { GetAboveNodeOptions, PlateEditor, Value } from '@udecode/plate-common';
+export declare const getTableAbove: <V extends Value = Value>(editor: PlateEditor<V>, options?: GetAboveNodeOptions<V> | undefined) => import("@udecode/plate-common").TNodeEntry<import("@udecode/plate-common").AncestorOf<import("@udecode/plate-common").TEditor<V>>> | undefined;
+//# sourceMappingURL=getTableAbove.d.ts.map

@@ -1,0 +1,55 @@
+{
+  "name": "@udecode/plate-core",
+  "version": "21.5.0",
+  "description": "The core architecture of Plate – a plugin system for slate",
+  "license": "MIT",
+  "homepage": "https://plate.udecode.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/udecode/plate.git",
+    "directory": "packages/core"
+  },
+  "bugs": {
+    "url": "https://github.com/udecode/plate/issues"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@udecode/slate": "21.4.1",
+    "@udecode/slate-react": "21.4.1",
+    "@udecode/utils": "19.7.1",
+    "@udecode/zustood": "^1.1.1",
+    "clsx": "^1.1.1",
+    "jotai": "^1.7.2",
+    "lodash": "^4.17.21",
+    "nanoid": "^3.3.4",
+    "react-hotkeys-hook": "^4.3.7",
+    "use-deep-compare": "^1.1.0",
+    "zustand": "^3.7.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "slate": ">=0.94.0",
+    "slate-history": ">=0.93.0",
+    "slate-react": ">=0.94.0"
+  },
+  "keywords": [
+    "contentEditable",
+    "editor",
+    "framework",
+    "html",
+    "plate",
+    "plugin",
+    "rich text",
+    "slate",
+    "wysiwyg"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

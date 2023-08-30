@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button> should add accessible roles: role=button, tabIndex=0 1`] = `
+<DocumentFragment>
+  <div
+    role="button"
+    tabindex="0"
+  />
+</DocumentFragment>
+`;
+
+exports[`<Button> should allow roles to be overridden: role=menu, tabIndex=-1 1`] = `
+<DocumentFragment>
+  <div
+    role="menu"
+    tabindex="-1"
+  />
+</DocumentFragment>
+`;

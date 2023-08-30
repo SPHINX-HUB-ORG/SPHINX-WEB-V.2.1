@@ -1,0 +1,6 @@
+import * as React from 'react';
+export declare const ModalProvider: React.FC;
+export interface ModalContext {
+    portalNode: Element | null;
+}
+export declare function useModalContainer(): ModalContext;

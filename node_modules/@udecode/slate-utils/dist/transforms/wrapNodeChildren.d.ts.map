@@ -1,0 +1,1 @@
+{"version":3,"file":"wrapNodeChildren.d.ts","sourceRoot":"","sources":["../../src/transforms/wrapNodeChildren.ts"],"names":[],"mappings":"AAAA,OAAO,EAGL,OAAO,EAEP,KAAK,EAGL,gBAAgB,EACjB,MAAM,gBAAgB,CAAC;AACxB,OAAO,EAAE,MAAM,EAAE,MAAM,gBAAgB,CAAC;AACxC,OAAO,EAAE,IAAI,EAAE,MAAM,OAAO,CAAC;AAG7B;;;;GAIG;AACH,eAAO,MAAM,gBAAgB;;WA4B5B,CAAC"}

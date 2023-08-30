@@ -1,0 +1,6 @@
+/// <reference types="react" />
+import { Alerts as AlertsCollection } from '../alerts';
+export interface AlertsProps {
+    alerts: AlertsCollection;
+}
+export declare function Alerts({ alerts }: AlertsProps): JSX.Element;

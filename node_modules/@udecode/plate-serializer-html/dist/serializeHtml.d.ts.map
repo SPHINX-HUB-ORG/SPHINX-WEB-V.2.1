@@ -1,0 +1,1 @@
+{"version":3,"file":"serializeHtml.d.ts","sourceRoot":"","sources":["../src/serializeHtml.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,cAAc,EAAE,iBAAiB,EAAE,MAAM,OAAO,CAAC;AAC1D,OAAO,EACL,WAAW,EAIX,WAAW,EACX,UAAU,EACV,KAAK,EACN,MAAM,uBAAuB,CAAC;AAQ/B;;GAEG;AACH,eAAO,MAAM,aAAa;IAWtB;;OAEG;;IAGH;;OAEG;;IAGH;;OAEG;;IAGH;;OAEG;;IAGH;;;OAGG;;IAGH;;;OAGG;;IAGH;;OAEG;;MAGJ,MAiDF,CAAC"}

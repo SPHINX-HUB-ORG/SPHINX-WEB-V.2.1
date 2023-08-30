@@ -1,0 +1,1 @@
+{"version":3,"file":"toggleMark.d.ts","sourceRoot":"","sources":["../../src/transforms/toggleMark.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,KAAK,EAAsB,MAAM,gBAAgB,CAAC;AAKpE,MAAM,WAAW,iBAAiB;IAChC,KAAK,CAAC,EAAE,MAAM,GAAG,MAAM,EAAE,CAAC;IAC1B,GAAG,EAAE,MAAM,CAAC;CACb;AAED;;;;;GAKG;AACH,eAAO,MAAM,UAAU,gEAEL,iBAAiB,SAmBlC,CAAC"}

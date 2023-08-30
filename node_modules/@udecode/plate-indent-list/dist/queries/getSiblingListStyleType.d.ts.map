@@ -1,0 +1,1 @@
+{"version":3,"file":"getSiblingListStyleType.d.ts","sourceRoot":"","sources":["../../src/queries/getSiblingListStyleType.ts"],"names":[],"mappings":"AAAA,OAAO,EACL,QAAQ,EACR,WAAW,EACX,QAAQ,EACR,UAAU,EACV,KAAK,EACN,MAAM,uBAAuB,CAAC;AAE/B,OAAO,EAAE,aAAa,EAAE,MAAM,UAAU,CAAC;AACzC,OAAO,EAAyB,4BAA4B,EAAE,MAAM,SAAS,CAAC;AAE9E;;;GAGG;AACH,eAAO,MAAM,uBAAuB;;YAQxB,MAAM;4IAkBjB,CAAC"}

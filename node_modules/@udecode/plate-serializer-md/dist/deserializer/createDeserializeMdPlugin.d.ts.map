@@ -1,0 +1,1 @@
+{"version":3,"file":"createDeserializeMdPlugin.d.ts","sourceRoot":"","sources":["../../src/deserializer/createDeserializeMdPlugin.ts"],"names":[],"mappings":"AAAA,OAAO,EAA8B,KAAK,EAAE,MAAM,uBAAuB,CAAC;AAK1E,OAAO,EAAE,mBAAmB,EAAE,MAAM,SAAS,CAAC;AAG9C,eAAO,MAAM,kBAAkB,kBAAkB,CAAC;AAElD,eAAO,MAAM,yBAAyB,oeA6BrC,CAAC"}

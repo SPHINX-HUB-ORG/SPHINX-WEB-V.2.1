@@ -1,0 +1,7 @@
+/// <reference types="react" />
+export declare const HiddenField: () => JSX.Element;
+export declare const HiddenFieldPlugin: {
+    name: string;
+    Component: () => JSX.Element;
+    parse: (value?: string) => string;
+};

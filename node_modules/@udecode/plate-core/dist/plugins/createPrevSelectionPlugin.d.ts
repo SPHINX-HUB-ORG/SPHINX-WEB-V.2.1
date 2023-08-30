@@ -1,0 +1,3 @@
+export declare const KEY_PREV_SELECTION = "prevSelection";
+export declare const createPrevSelectionPlugin: <OP = import("@udecode/utils").AnyObject, OV extends import("@udecode/slate").Value = import("@udecode/slate").Value, OE extends import("..").PlateEditor<OV> = import("..").PlateEditor<OV>>(override?: Partial<import("..").PlatePlugin<import("..").NoInfer<OP>, OV, OE>> | undefined, overrideByKey?: import("..").OverrideByKey<OV, OE>) => import("..").PlatePlugin<import("..").NoInfer<OP>, OV, OE>;
+//# sourceMappingURL=createPrevSelectionPlugin.d.ts.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"mapInjectPropsToPlugin.d.ts","sourceRoot":"","sources":["../../src/utils/mapInjectPropsToPlugin.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,gBAAgB,CAAC;AACvC,OAAO,EAAE,WAAW,EAAE,MAAM,sBAAsB,CAAC;AACnD,OAAO,EACL,WAAW,EAEX,eAAe,EAChB,MAAM,6BAA6B,CAAC;AAIrC;;GAEG;AACH,eAAO,MAAM,sBAAsB,4KAOjB,QAAQ,WAAW,CAAC;;;;aAkBrC,CAAC"}

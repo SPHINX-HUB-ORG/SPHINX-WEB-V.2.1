@@ -1,0 +1,1 @@
+{"version":3,"file":"wrapLink.d.ts","sourceRoot":"","sources":["../../src/transforms/wrapLink.ts"],"names":[],"mappings":"AAAA,OAAO,EAEL,WAAW,EACX,KAAK,EAEL,gBAAgB,EACjB,MAAM,uBAAuB,CAAC;AAI/B,MAAM,WAAW,eAAe,CAAC,CAAC,SAAS,KAAK,GAAG,KAAK,CACtD,SAAQ,gBAAgB,CAAC,CAAC,CAAC;IAC3B,GAAG,EAAE,MAAM,CAAC;IACZ,MAAM,CAAC,EAAE,MAAM,CAAC;CACjB;AAED;;GAEG;AACH,eAAO,MAAM,QAAQ,oGAcpB,CAAC"}

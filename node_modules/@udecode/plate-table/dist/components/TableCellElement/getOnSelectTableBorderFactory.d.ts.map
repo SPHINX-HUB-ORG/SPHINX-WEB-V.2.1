@@ -1,0 +1,1 @@
+{"version":3,"file":"getOnSelectTableBorderFactory.d.ts","sourceRoot":"","sources":["../../../src/components/TableCellElement/getOnSelectTableBorderFactory.ts"],"names":[],"mappings":"AAAA,OAAO,EAEL,WAAW,EACX,QAAQ,EACR,KAAK,EACN,MAAM,uBAAuB,CAAC;AAG/B,OAAO,EAAE,eAAe,EAAE,MAAM,aAAa,CAAC;AAE9C,eAAO,MAAM,6BAA6B,2DAEzB,QAAQ,EAAE,GAAG,IAAI,cACpB,eAAe,GAAG,OAAO,GAAG,MAAM,eAgB/C,CAAC"}

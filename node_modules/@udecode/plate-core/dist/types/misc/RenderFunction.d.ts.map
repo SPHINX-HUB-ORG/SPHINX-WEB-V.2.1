@@ -1,0 +1,1 @@
+{"version":3,"file":"RenderFunction.d.ts","sourceRoot":"","sources":["../../../src/types/misc/RenderFunction.ts"],"names":[],"mappings":";AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,gBAAgB,CAAC;AAE3C;;GAEG;AACH,MAAM,WAAW,cAAc,CAAC,CAAC,GAAG,SAAS;IAC3C,CACE,KAAK,EAAE,CAAC,EACR,aAAa,CAAC,EAAE,CAAC,KAAK,CAAC,EAAE,CAAC,KAAK,GAAG,CAAC,OAAO,GAAG,IAAI,GAChD,GAAG,CAAC,OAAO,GAAG,IAAI,CAAC;CACvB"}

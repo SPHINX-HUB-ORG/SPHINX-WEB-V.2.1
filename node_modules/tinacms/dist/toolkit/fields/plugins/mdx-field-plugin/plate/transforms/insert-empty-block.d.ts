@@ -1,0 +1,2 @@
+import { PlateEditor } from '@udecode/plate-headless';
+export declare const insertEmptyCodeBlock: (editor: PlateEditor) => void;

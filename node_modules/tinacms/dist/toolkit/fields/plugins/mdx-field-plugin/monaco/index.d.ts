@@ -1,0 +1,4 @@
+/// <reference types="react" />
+import { RichTextType } from '..';
+declare const RawEditor: (props: RichTextType) => JSX.Element;
+export default RawEditor;

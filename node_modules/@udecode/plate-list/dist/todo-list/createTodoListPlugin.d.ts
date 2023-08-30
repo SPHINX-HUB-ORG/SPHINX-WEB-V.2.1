@@ -1,0 +1,4 @@
+import { TodoListPlugin } from '../types';
+export declare const ELEMENT_TODO_LI = "action_item";
+export declare const createTodoListPlugin: <OP = TodoListPlugin, OV extends import("@udecode/plate-common").Value = import("@udecode/plate-common").Value, OE extends import("@udecode/plate-common").PlateEditor<OV> = import("@udecode/plate-common").PlateEditor<OV>>(override?: Partial<import("@udecode/plate-common").PlatePlugin<import("@udecode/plate-common").NoInfer<OP>, OV, OE>> | undefined, overrideByKey?: import("@udecode/plate-common").OverrideByKey<OV, OE> | undefined) => import("@udecode/plate-common").PlatePlugin<import("@udecode/plate-common").NoInfer<OP>, OV, OE>;
+//# sourceMappingURL=createTodoListPlugin.d.ts.map

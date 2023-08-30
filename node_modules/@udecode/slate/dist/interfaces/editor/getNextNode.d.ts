@@ -1,0 +1,14 @@
+import { Modify } from '@udecode/utils';
+import { EditorNextOptions } from 'slate';
+import { TDescendant } from '../node';
+import { ENode, TNodeMatch } from '../node/TNode';
+import { TNodeEntry } from '../node/TNodeEntry';
+import { TEditor, Value } from './TEditor';
+export declare type GetNextNodeOptions<V extends Value = Value> = Modify<NonNullable<EditorNextOptions<TDescendant>>, {
+    match?: TNodeMatch<ENode<V>>;
+}>;
+/**
+ * Get the matching node in the branch of the document after a location.
+ */
+export declare const getNextNode: <N extends ENode<V>, V extends Value = Value>(editor: TEditor<V>, options?: GetNextNodeOptions<V> | undefined) => TNodeEntry<N> | undefined;
+//# sourceMappingURL=getNextNode.d.ts.map

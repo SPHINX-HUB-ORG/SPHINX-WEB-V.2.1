@@ -1,0 +1,13 @@
+import { TEditor, Value } from '@udecode/slate';
+import { Location } from 'slate';
+/**
+ * Get the point from a location (default: selection).
+ * If the location is a range, get the anchor point.
+ * If the location is a path, get the point at this path with offset 0.
+ * If `focus` is true, get the focus point.
+ */
+export declare const getPointFromLocation: <V extends Value>(editor: TEditor<V>, { at, focus, }?: {
+    at?: Location | null | undefined;
+    focus?: boolean | undefined;
+}) => import("slate").BasePoint | undefined;
+//# sourceMappingURL=getPointFromLocation.d.ts.map

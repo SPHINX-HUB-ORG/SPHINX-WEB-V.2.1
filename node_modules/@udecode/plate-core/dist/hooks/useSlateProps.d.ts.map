@@ -1,0 +1,1 @@
+{"version":3,"file":"useSlateProps.d.ts","sourceRoot":"","sources":["../../src/hooks/useSlateProps.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,KAAK,EAAE,MAAM,gBAAgB,CAAC;AACvC,OAAO,EAAE,UAAU,EAAE,MAAM,sBAAsB,CAAC;AAClD,OAAO,EAAE,OAAO,EAAsC,MAAM,WAAW,CAAC;AAIxE;;GAEG;AACH,eAAO,MAAM,aAAa;;MAItB,KAAK,UAAU,EAAE,UAAU,CA4B9B,CAAC"}

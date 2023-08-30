@@ -1,0 +1,2 @@
+export declare const autoformatMath: import("../..").AutoformatRule<import("@udecode/slate").Value, import("@udecode/plate-core").PlateEditor<import("@udecode/slate").Value>>[];
+//# sourceMappingURL=autoformatMath.d.ts.map

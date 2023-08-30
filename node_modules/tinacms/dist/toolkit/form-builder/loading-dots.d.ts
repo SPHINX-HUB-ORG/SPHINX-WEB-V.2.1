@@ -1,0 +1,7 @@
+/// <reference types="react" />
+interface LoadingDotsProps {
+    dotSize?: number;
+    color?: string;
+}
+export declare const LoadingDots: ({ dotSize, color, }: LoadingDotsProps) => JSX.Element;
+export {};

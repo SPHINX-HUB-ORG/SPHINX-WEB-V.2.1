@@ -1,0 +1,2 @@
+/// <reference types="react" />
+export declare const FormModal: ({ plugin, close }: any) => JSX.Element;

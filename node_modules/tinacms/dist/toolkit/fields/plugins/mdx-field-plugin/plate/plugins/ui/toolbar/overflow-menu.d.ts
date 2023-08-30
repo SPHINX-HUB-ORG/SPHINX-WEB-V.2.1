@@ -1,0 +1,6 @@
+/// <reference types="react" />
+export declare const OverflowMenu: ({ toolbarItems, itemsShown, showEmbed }: {
+    toolbarItems: any;
+    itemsShown: any;
+    showEmbed: any;
+}) => JSX.Element;

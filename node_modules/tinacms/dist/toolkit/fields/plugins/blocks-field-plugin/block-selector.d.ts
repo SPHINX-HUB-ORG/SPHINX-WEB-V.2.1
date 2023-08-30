@@ -1,0 +1,8 @@
+/// <reference types="react" />
+import { BlockTemplate } from '.';
+export declare const BlockSelector: ({ templates, addItem, }: {
+    templates: {
+        [key: string]: BlockTemplate;
+    };
+    addItem: any;
+}) => JSX.Element;

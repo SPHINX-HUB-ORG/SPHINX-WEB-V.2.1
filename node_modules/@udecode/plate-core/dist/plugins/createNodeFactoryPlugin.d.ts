@@ -1,0 +1,3 @@
+export declare const KEY_NODE_FACTORY = "nodeFactory";
+export declare const createNodeFactoryPlugin: <OP = import("@udecode/utils").AnyObject, OV extends import("@udecode/slate").Value = import("@udecode/slate").Value, OE extends import("..").PlateEditor<OV> = import("..").PlateEditor<OV>>(override?: Partial<import("..").PlatePlugin<import("..").NoInfer<OP>, OV, OE>> | undefined, overrideByKey?: import("..").OverrideByKey<OV, OE>) => import("..").PlatePlugin<import("..").NoInfer<OP>, OV, OE>;
+//# sourceMappingURL=createNodeFactoryPlugin.d.ts.map

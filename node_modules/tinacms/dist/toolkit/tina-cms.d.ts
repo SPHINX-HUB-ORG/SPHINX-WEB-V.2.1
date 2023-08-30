@@ -1,0 +1,41 @@
+/**
+
+*/
+/// <reference types="react" />
+import { CMS, CMSConfig, PluginType } from './core';
+import { FieldPlugin } from './form-builder';
+import { ScreenPlugin } from './react-screens';
+import { Form } from './forms';
+import { Alerts, EventsToAlerts } from './alerts';
+import { SidebarState, SidebarStateOptions } from './react-sidebar';
+import { TinaAction, TinaState } from './tina-state';
+import type { Client } from '../internalClient';
+export interface TinaCMSConfig extends CMSConfig {
+    sidebar?: SidebarStateOptions | boolean;
+    alerts?: EventsToAlerts;
+    isLocalClient?: boolean;
+    isSelfHosted?: boolean;
+    clientId?: string;
+}
+export declare class TinaCMS extends CMS {
+    sidebar?: SidebarState;
+    _alerts?: Alerts;
+    state: TinaState;
+    dispatch: React.Dispatch<TinaAction>;
+    api: {
+        [key: string]: any;
+        tina?: Client;
+    };
+    constructor({ sidebar, alerts, isLocalClient, isSelfHosted, clientId, ...config }?: TinaCMSConfig);
+    get alerts(): Alerts;
+    registerApi(name: string, api: any): void;
+    get forms(): PluginType<Form>;
+    get fields(): PluginType<FieldPlugin>;
+    get screens(): PluginType<ScreenPlugin>;
+    removeAllForms(): void;
+    /**
+     * When a form is associated with any queries
+     * it's considered orphaned.
+     */
+    removeOrphanedForms(): void;
+}

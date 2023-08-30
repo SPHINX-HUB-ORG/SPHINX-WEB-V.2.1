@@ -1,0 +1,8 @@
+import { ENode, TEditor, Value } from '../interfaces';
+import { FindNodeOptions } from './findNode';
+/**
+ * Iterate through all of the nodes in the editor and break early for the first truthy match. Otherwise
+ * returns false.
+ */
+export declare const someNode: <N extends ENode<V>, V extends Value = Value>(editor: TEditor<V>, options: FindNodeOptions<V>) => boolean;
+//# sourceMappingURL=someNode.d.ts.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"CommentLinkButton.d.ts","sourceRoot":"","sources":["../../src/components/CommentLinkButton.ts"],"names":[],"mappings":"AAAA,OAAO,EAGL,WAAW,EACZ,MAAM,uBAAuB,CAAC;AAE/B,oBAAY,sBAAsB,GAAG,EAAE,GAAG,WAAW,CAAC,KAAK,CAAC,CAAC;AAE7D,eAAO,MAAM,oBAAoB,UACxB,sBAAsB,KAC5B,YAAY,KAAK,CAEnB,CAAC;AAEF,eAAO,MAAM,iBAAiB,mEAK7B,CAAC"}

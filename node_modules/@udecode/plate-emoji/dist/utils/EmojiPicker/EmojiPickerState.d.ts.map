@@ -1,0 +1,1 @@
+{"version":3,"file":"EmojiPickerState.d.ts","sourceRoot":"","sources":["../../../src/utils/EmojiPicker/EmojiPickerState.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAuB,MAAM,OAAO,CAAC;AAEtD,OAAO,EACL,wBAAwB,EACxB,qBAAqB,EACtB,MAAM,0BAA0B,CAAC;AAclC,eAAO,MAAM,gBAAgB,QAAO;IAClC,qBAAqB;IACrB,SAAS,wBAAwB,CAAC;CA2DnC,CAAC"}
