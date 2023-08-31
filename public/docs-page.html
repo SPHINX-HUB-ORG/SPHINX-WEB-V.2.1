@@ -119,8 +119,6 @@
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-4">MPC implementation</a></li>
 
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-5">Cosschain implementation</a></li>
-					
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-6">Proof-of-Stake implementation</a></li>
 
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-7">Proof-of-Work implementation</a></li>
 
@@ -135,20 +133,7 @@
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-12">Mainnet</a></li>
 
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-13">Layer 2 solution</a></li>
-
-
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7">Founders</a></li>
-
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Founders and Inventors</a></li>
-
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Inventors</a></li>
-
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">Contributors</a></li>
-
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-7-4">Funding partners</a></li>
-
-
-
+					
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9">FAQs</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section 1</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section 2</a></li>
@@ -161,7 +146,7 @@
 		    <div class="container">
 			    <article class="docs-article" id="section-1">
 				    <header class="docs-header">
-					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2023-06-03</span></h1>
+					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2023-08-31</span></h1>
 					    <section class="docs-intro">
 						    <p>
 								Welcome to our inclusive and dynamic decentralized world, where individuals and institutional from all walks of life are warmly invited to join and support the mission. Here, we believe that everyone has unique skills and passions to offer, and we encourage you to commit your talents towards making a lasting impact in the decentralized realm.
@@ -1457,19 +1442,23 @@
 						</div><!--//docs-code-block-->
 						<br>
 						<br>
-                        <h5>Progress Examples:</h5>
+                        <h4>Progress:</h4>
                         <div class="my-4">
+							<h6>Development</h6>
 	                        <div class="progress my-4">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
+							<h6>Testing</h6>
 							<div class="progress my-4">
-							    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+							    <div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
+							<h6>Testnet</h6>
 							<div class="progress my-4">
-							    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							    <div class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
+							<h6>Mainnet</h6>
 							<div class="progress my-4">
-							    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+							    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
                         </div>
 					</section><!--//section-->
@@ -1524,8 +1513,10 @@
 					</section><!--//section-->
 					
 					<section class="docs-section" id="item-5-2">
-						<h2 class="section-heading">1. Crystals-kyber implementation</h2>
-						
+						<h2 class="section-heading">Crystals-kyber implementation</h2>
+						<p>
+							Crystals-kyber is utilized due to its exceptional properties as a crystal lattice structure. These crystals exhibit high stability, efficient energy transfer, and unique quantum behaviors, making them ideal for applications in various fields including cryptography, quantum computing, and signal processing.
+						</p>
 						<h5>Kyber Specifications:</h5>
 						<div class="table-responsive my-4">
 							<table class="table table-bordered table-dark">
@@ -1578,13 +1569,12 @@
                         <h5>Progress:</h5>
                         <div class="my-4">
 	                        <div class="progress my-4">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 5%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
                         </div>
 
 						<h5>Callout:</h5>
 							<div class="callout-block callout-block-warning">
-								
 								<div class="content">
 									<h4 class="callout-title">
 										<span class="callout-icon-holder me-1">
@@ -1597,14 +1587,12 @@
 									</p>
 								</div>
 							</div>
-
 						<br>
 						<br>
-						<h2 class="section-heading">2. SPHINCS+ (DSA) implementation</h2>
+						<h2 class="section-heading">SPHINCS+ (DSA) implementation</h2>
 						<p>
-							SPHINCS+-SHA256f (Robust) will responsible for <code>sign, verify, hash</code>
+							SPHINCS+ (DSA) is chosen for its advanced security features and resistance against quantum attacks. This cryptographic scheme offers robust protection against current and potential future threats posed by quantum computers, ensuring the long-term security of sensitive data and communications.
 						</p>
-
 						<h5>Sphincs+ Specifications:</h5>
 						<div class="table-responsive my-4">
 							<table class="table table-bordered table-dark">
@@ -1661,7 +1649,7 @@
                         <h5>Progress:</h5>
                         <div class="my-4">
 	                        <div class="progress my-4">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 5%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
                         </div>
 						<br>
@@ -1683,11 +1671,10 @@
 
 						<br>
 						<br>
-						<h2 class="section-heading">3. SHA3/SWIFFTX hash implementation</h2>
+						<h2 class="section-heading">SPHINXHash a "lattice-based" hash implementation</h2>
 						<p>
-							An efficient lattice-based cryptographic hash function that responsible to <code>main hash</code> function.
+							The utilization of SWIFFTX's lattice-based hash function stems from its inherent resistance to quantum attacks. This unique approach leverages the complex mathematical structure of lattices, making it highly secure against emerging quantum computing threats. SWIFFTX ensures data integrity and confidentiality, offering a robust solution for modern cryptographic needs.
 						</p>
-
 						<div class="table-responsive my-4">
 							<table class="table table-bordered table-dark">
 								<thead>
@@ -1728,17 +1715,16 @@
                         <h5>Progress:</h5>
                         <div class="my-4">
 	                        <div class="progress my-4">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
                         </div>
 
 						<br>
 						<br>
-						<h2 class="section-heading">4. Base58 implementation</h2>
+						<h2 class="section-heading">Base58 implementation</h2>
 						<p>
-							Inspired by Bitcoin to created human readability address we using base58check to encode.
+							Base58 encoding is chosen for its efficiency and readability in representing data. Unlike Base64, Base58 omits characters that can be easily confused, such as '0', 'O', 'l', and 'I'. This makes Base58 well-suited for applications like cryptocurrency addresses and unique identifiers, ensuring accurate transmission and reducing human errors.
 						</p>
-
 						<h5>Base58:</h5>
 										<div class="docs-code-block">
 											<script src="https://gist.github.com/cahyaksm/873f76c290480f35a78d15a5a4a4e6f0.js"></script>
@@ -1764,17 +1750,16 @@
                         <h5>Progress:</h5>
                         <div class="my-4">
 	                        <div class="progress my-4">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
                         </div>
 					</section><!--//section-->
 					
 					<section class="docs-section" id="item-5-4">
-						<h2 class="section-heading">5. Multi-party signature implementation</h2>
+						<h2 class="section-heading">MPC for digital signature implementation</h2>
 						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, itaque hic, magni illo esse maxime pariatur perferendis ullam quo sed necessitatibus quae voluptatum, illum debitis minus ut explicabo reprehenderit. Quidem?
+							The use of Multi-Party Computation (MPC) for digital signatures offers enhanced security and privacy over traditional multisignature schemes. MPC allows signers to collaboratively create a signature without sharing their individual private keys, mitigating the risk of key exposure. This ensures a higher level of trust and confidentiality in digital transactions, making MPC an ideal choice for sensitive applications.
 						</p>
-						
 						  <h5>Find out:</h5>
 						  <div class="row my-3">
 						  <div class="col-md-6 col-12">
@@ -1792,16 +1777,16 @@
                         <h5>Progress:</h5>
                         <div class="my-4">
 	                        <div class="progress my-4">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
                         </div>
 
 					</section><!--//section-->
 					
 					<section class="docs-section" id="item-5-5">
-						<h2 class="section-heading">6. Crosschain implementation</h2>
+						<h2 class="section-heading">Crosschain implementation</h2>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque optio tempora amet, laudantium exercitationem obcaecati dolorum modi debitis voluptatum, iusto voluptatibus eveniet quae nostrum deserunt? Numquam quae molestias dolor cum.
+							The implementation of Crosschain technology facilitates seamless interactions and asset transfers between distinct blockchain networks. Crosschain solutions enhance interoperability, enabling decentralized applications to access and utilize resources from multiple blockchains. This approach empowers users with increased flexibility, efficiency, and scalability, making it a pivotal choice for building complex and interconnected blockchain ecosystems.
 						</p>
 						<h5>Find out:</h5>
 						  <div class="row my-3">
@@ -1821,43 +1806,15 @@
                         <h5>Progress:</h5>
                         <div class="my-4">
 	                        <div class="progress my-4">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-                        </div>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-5-6">
-						<h2 class="section-heading">7. Proof-of-Stake implementation</h2>
-						<p>
-							Implement proof-of-stake to be part of multi-party signature and validated the rest operation.
-						</p>
-						<h5>Find out:</h5>
-						  <div class="row my-3">
-						  <div class="col-md-6 col-12">
-							  <ul class="list list-unstyled pl-0">
-								  <li><a href="https://forms.gle/YhuVTSjUkY6AT8HM6" class="btn btn-success" target="_blank"><i class="fas fa-code-branch me-2"></i> Contribute</a></li>
-							  </ul>
-							  </div>
-						  </div><!--//row-->
-
-						  <h5>Authors:</h5>
-						<p>
-							<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://github.com/cahyaksm" target="_blank">C. Kusuma</a>
-						</p>
-
-						<br>
-                        <h5>Progress:</h5>
-                        <div class="my-4">
-	                        <div class="progress my-4">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
                         </div>
 					</section><!--//section-->
 
 					<section class="docs-section" id="item-5-7">
-						<h2 class="section-heading">8. Proof-of-Work implementation</h2>
+						<h2 class="section-heading">Proof-of-Work implementation</h2>
 						<p>
-							Implement proof-of-work to mining coin and block validation.
+							The implementation of Proof-of-Work (PoW) consensus is driven by its proven security and decentralization benefits. During the developer mining phase, advanced optimization techniques have been employed to reduce energy consumption by approximately 30%, while maintaining the robustness of the network. This innovation showcases our commitment to sustainability without compromising the integrity of the consensus mechanism.
 						</p>
 						<h5>Find out:</h5>
 						  <div class="row my-3">
@@ -1877,15 +1834,15 @@
                         <h5>Progress:</h5>
                         <div class="my-4">
 	                        <div class="progress my-4">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
                         </div>
 					</section><!--//section-->
 
 					<section class="docs-section" id="item-5-8">
-						<h2 class="section-heading">9. Smartcontract implementation</h2>
+						<h2 class="section-heading">Multiple-Smartcontract program language implementation</h2>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam quam perspiciatis sunt, facere repellat numquam molestiae cupiditate id itaque non fuga voluptates, officiis eius mollitia ad ut nulla eveniet.
+							The implementation of multiple smart contract programming languages enriches the development ecosystem by catering to diverse developer preferences and application requirements. This approach empowers developers to leverage languages they are proficient in, fostering innovation and efficient development across a wide spectrum of use cases. By providing flexibility and choice, we create a more inclusive and adaptable environment for building decentralized applications.
 						</p>
 						<h5>Find out:</h5>
 						  <div class="row my-3">
@@ -1905,15 +1862,15 @@
                         <h5>Progress:</h5>
                         <div class="my-4">
 	                        <div class="progress my-4">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
                         </div>
 					</section><!--//section-->
 
 					<section class="docs-section" id="item-5-9">
-						<h2 class="section-heading">10. Smartcontract interface implementation</h2>
+						<h2 class="section-heading">Smartcontract interface implementation</h2>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam quam perspiciatis sunt, facere repellat numquam molestiae cupiditate id itaque non fuga voluptates, officiis eius mollitia ad ut nulla eveniet.
+							The implementation of this interface is a strategic decision aimed at facilitating the utilization of multiple smart contract programming languages. By providing a standardized interface, developers can seamlessly integrate their contracts with the platform, enabling cross-language interoperability. This approach empowers developers to harness the strengths of different languages while ensuring compatibility and coherence across the ecosystem.
 						</p>
 						<h5>Find out:</h5>
 						  <div class="row my-3">
@@ -1933,16 +1890,15 @@
 						<h5>Progress:</h5>
 						<div class="my-4">
 							<div class="progress my-4">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 						</div>
 					</section><!--//section-->
 	
-	
 					<section class="docs-section" id="item-5-10">
-						<h2 class="section-heading">11. Build in zero-knowledge implementation</h2>
+						<h2 class="section-heading">Build in zero-knowledge implementation</h2>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam quam perspiciatis sunt, facere repellat numquam molestiae cupiditate id itaque non fuga voluptates, officiis eius mollitia ad ut nulla eveniet.
+							The incorporation of a built-in zero-knowledge proof system is crucial for enhancing privacy and security within the platform. Zero-knowledge proofs allow for the validation of statements without revealing the underlying data, ensuring confidential transactions and interactions. This technology is pivotal in protecting sensitive information while enabling transparent and verifiable operations, making it an essential component of our system.
 						</p>
 						<h5>Find out:</h5>
 						<div class="row my-3">
@@ -1962,15 +1918,15 @@
 						<h5>Progress:</h5>
 						<div class="my-4">
 							<div class="progress my-4">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 						</div>
 					</section><!--//section-->
 
 					<section class="docs-section" id="item-5-11">
-						<h2 class="section-heading">12. Testnetnet</h2>
+						<h2 class="section-heading">Testnetnet</h2>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam quam perspiciatis sunt, facere repellat numquam molestiae cupiditate id itaque non fuga voluptates, officiis eius mollitia ad ut nulla eveniet.
+							You will seeing the description untill this progress undergo.
 						</p>
 						<h5>Find out:</h5>
 						<div class="row my-3">
@@ -1990,7 +1946,7 @@
 						<h5>Progress:</h5>
 						<div class="my-4">
 							<div class="progress my-4">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 						</div>
 					</section><!--//section-->
@@ -1998,7 +1954,7 @@
 					<section class="docs-section" id="item-5-12">
 						<h2 class="section-heading">13. Mainnet</h2>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam quam perspiciatis sunt, facere repellat numquam molestiae cupiditate id itaque non fuga voluptates, officiis eius mollitia ad ut nulla eveniet.
+							You will seeing the description untill this progress undergo.
 						</p>
 						<h5>Find out:</h5>
 						<div class="row my-3">
@@ -2018,7 +1974,7 @@
 						<h5>Progress:</h5>
 						<div class="my-4">
 							<div class="progress my-4">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 						</div>
 					</section><!--//section-->
@@ -2050,113 +2006,8 @@
 							</div>
 						</div>
 					</section><!--//section-->
-
 			    </article><!--//article-->
 
-
-			    
-			    <article class="docs-article" id="section-7">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Founders vision</h1>
-					    <section class="docs-intro">
-						    <p>
-								As concerned members of a community deeply invested in the rapid advancement of quantum computing, we have devoted ourselves to making a meaningful contribution by developing post-quantum security solutions for the global community. Our vision is to safeguard the world against potential threats posed by the progress of quantum computers.
-							</p>
-						</section><!--//docs-intro-->
-
-				    </header>
-				    <section class="docs-section" id="item-7-1">
-						<h2 class="mt-5">Founders and Inventors:</h2>
-						<br>
-						<h5>1. C. Kusuma</h5>
-						<br>
-						<h6>About me:</h6>
-						<p>
-							I am not an engineer, i am not a cryptographer, i am not a mathematician, I just people that care to community. I love to do research, i love to problem solving, i love to learn.
-						</p>
-						<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://linktr.ee/c.kusuma" target="_blank">C kusuma</a>. </p>
-						
-                        <br>
-						<h5>2. Your name:</h5>
-						<br>
-						<h6>About me:</h6>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa iste nemo nisi, numquam cum reprehenderit, libero qui, atque similique autem deleniti aliquid. Provident quam, facere et aperiam ipsum repellat iste!
-						</p>
-						<i class="fas fa-at"></i> <a class="docs-theme-link" href="#" target="_blank">Your name</a>. </p>
-                       
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-7-2">
-						<h2 class="section-heading">Inventors</h2>
-						<br>
-						<h5>1. Your name</h5>
-						<br>
-						<h6>About me:</h6>
-						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe atque, provident possimus inventore praesentium, commodi quasi voluptatum rerum alias fugiat vel facilis quo dignissimos, ipsa cumque ex corporis cupiditate vitae?
-						</p>
-						<i class="fas fa-at"></i> <a class="docs-theme-link" href="#" target="_blank">Yourname</a>. </p>
-						
-                        <br>
-						<h5>2. Your name:</h5>
-						<br>
-						<h6>About me:</h6>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa iste nemo nisi, numquam cum reprehenderit, libero qui, atque similique autem deleniti aliquid. Provident quam, facere et aperiam ipsum repellat iste!
-						</p>
-						<i class="fas fa-at"></i> <a class="docs-theme-link" href="#" target="_blank">Your name</a>. </p>
-                       
-					</section><!--//section-->
-						
-					
-					
-					<section class="docs-section" id="item-7-3">
-						<h2 class="section-heading">Contributors</h2>
-						<br>
-						<h5>1. Your name</h5>
-						<br>
-						<h6>About me:</h6>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint minima nobis molestias consequuntur cumque fugiat ea rerum, doloribus a dicta reiciendis, odit eaque eligendi illum pariatur dignissimos? Accusantium, est vero.
-						</p>
-						<i class="fas fa-at"></i> <a class="docs-theme-link" href="#" target="_blank">Your name</a>. </p>
-						
-                        <br>
-						<h5>2. Your name:</h5>
-						<br>
-						<h6>About me:</h6>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa iste nemo nisi, numquam cum reprehenderit, libero qui, atque similique autem deleniti aliquid. Provident quam, facere et aperiam ipsum repellat iste!
-						</p>
-						<i class="fas fa-at"></i> <a class="docs-theme-link" href="https://id.wikipedia.org/wiki/SHA-2" target="_blank">Your name</a>. </p>
-                       
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-7-4">
-						<h2 class="section-heading">Funding Partners</h2>
-							<br>
-							<h5>1. Your name</h5>
-							<br>
-							<h6>About me:</h6>
-							<p>
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe atque, provident possimus inventore praesentium, commodi quasi voluptatum rerum alias fugiat vel facilis quo dignissimos, ipsa cumque ex corporis cupiditate vitae?
-							</p>
-							<i class="fas fa-at"></i> <a class="docs-theme-link" href="#" target="_blank">Yourname</a>. </p>
-							
-							<br>
-							<h5>2. Your name:</h5>
-							<br>
-							<h6>About me:</h6>
-							<p>
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa iste nemo nisi, numquam cum reprehenderit, libero qui, atque similique autem deleniti aliquid. Provident quam, facere et aperiam ipsum repellat iste!
-							</p>
-							<i class="fas fa-at"></i> <a class="docs-theme-link" href="#" target="_blank">Your name</a>. </p>
-						   
-						</section><!--//section-->
-			    </article>
-			    
-			    
 			    <article class="docs-article" id="section-9">
 				    <header class="docs-header">
 					    <h1 class="docs-heading">FAQs</h1>
