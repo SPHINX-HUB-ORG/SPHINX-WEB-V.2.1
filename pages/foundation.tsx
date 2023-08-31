@@ -30,7 +30,7 @@ const FEATURES = [
 
 export default function FeaturesPage() {
   return (
-    <Page title="Meet the people" description="">
+    <Page title="Founder's vision" description="As concerned members of a community deeply invested in the rapid advancement of quantum computing, we have devoted ourselves to making a meaningful contribution by developing post-quantum security solutions for the global community. Our vision is to safeguard the world against potential threats posed by the progress of quantum computers.">
       <Wrapper>
         <SectionTitle>Check out this quick introduction</SectionTitle>
         <YoutubeVideo url="https://www.youtube.com/watch?v=BggrpKfqh1c" />
