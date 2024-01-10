@@ -83,7 +83,7 @@
     
 
     body{
-        margin:0;
+        margin: 49px;
         font-family:var(--bs-body-font-family);
         font-size:var(--bs-body-font-size);
         font-weight:var(--bs-body-font-weight);
@@ -304,7 +304,7 @@
     
     img,svg{
         vertical-align:middle;
-        height: 36px;
+        height: 37px;
         width:auto;
     }
 
@@ -617,7 +617,7 @@
     }
     
     .container,.container-fluid,.container-xxl,.container-xl,.container-lg,.container-md,.container-sm{
-        --bs-gutter-x: 1.5rem;
+        --bs-gutter-x: 5.5rem;
         --bs-gutter-y: 0;
         width:100%;
         padding-right:calc(var(--bs-gutter-x) * .5);
@@ -7920,10 +7920,13 @@
             padding-top:.25rem !important;
             padding-bottom:.25rem !important
         }
-        .py-2{
-            padding-top:.5rem !important;
-            padding-bottom:.5rem !important
+        .py-2 {
+            padding-top: .5rem !important;
+            padding-bottom: .5rem !important;
+            margin-right: 10px; /* Adjust value as needed */
+            margin-left: -86px;  /* Adjust value as needed */
         }
+        
         .py-3{
             padding-top:1rem !important;
             padding-bottom:1rem !important
@@ -11222,10 +11225,11 @@ a.docs-text-link:hover{
     width:300px
 }
 
+
 .docs-logo-wrapper{
     position:absolute;
-    left:15px;
-    top:0.5rem
+    left:178px !important;
+    top:0.3rem
 }
 
 .docs-logo-wrapper .site-logo{
@@ -11289,7 +11293,6 @@ a.docs-text-link:hover{
     transition:-webkit-transform 0.35s ease-in-out;
     transition:transform 0.35s ease-in-out;
     transition:transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
-    box-shadow:1px 0 5px 0 rgba(0,0,0,0.1)
 }
 
 .docs-sidebar::-webkit-scrollbar{
@@ -11419,7 +11422,7 @@ a.docs-text-link:hover{
 }
 
 .docs-article{
-    padding:2rem;
+    padding:0rem;
     color:#5d6778;
     scroll-margin-top:69px;
     scroll-snap-margin-top:69px
@@ -11433,6 +11436,7 @@ a.docs-text-link:hover{
     font-size:3rem;
     margin-bottom:2rem;
     position:relative
+    text-align: left !important;
 }
 
 .docs-article .docs-time{
